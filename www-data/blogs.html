@@ -1,0 +1,30 @@
+<div>
+	<div class="heading03">OpenSource Projects</div>
+    <style>li{margin-bottom:10px}span:hover{cursor:pointer;}</style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.0.0/list.min.js"></script>
+
+	<div id="results">
+	    <input class="search" /><br />
+	    <span class="sort" data-sort="blog_title">Sort by Title</span><br />
+	    <ul class="list"></ul>
+	</div>
+    <script>
+    	function mylink(self){
+		  alert(self.innerHTML);
+		}
+
+        var options = {
+            valueNames: ['blog_title', 'blog_tags', 'blog_link'],
+            item: '<li><div class="blog_title"></div><span class="blog_tags"></span><a class="blog_link" href="javascript:void(0)" onclick="mylink(this);"><span class="blog_link"></span></a></li>'
+        };
+
+        var values = [
+            {blog_title: "Puppet : A Beginner's Concept Guide Part4", blog_tags: 'puppet, devops, configuration, automation, sysad, data', blog_link: '/blogposts' }
+          , {blog_title: "Puppet : A Beginner's Concept Guide Part3", blog_tags: 'puppet, devops, configuration, automation, sysad, modules', blog_link: '/blogposts' }
+          , {blog_title: "Puppet : A Beginner's Concept Guide Part2", blog_tags: 'puppet, devops, configuration, automation, sysad, modules', blog_link: '/blogposts' }
+          , {blog_title: "Puppet : A Beginner's Concept Guide Part1", blog_tags: 'puppet, devops, configuration, automation, sysad, basics', blog_link: '/blogposts' }
+        ];
+
+    	var hackerList = new List('results', options, values);
+    </script>
+</div>

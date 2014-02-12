@@ -1,0 +1,109 @@
+/*!
+ * abk.css
+ * MIT License
+ * (c) <AbhishekKr>(abhikumar163@gmail.com)
+ * abhishekkr@github | abionic@twitter
+ */
+* {
+    background-color: #000000;
+    color: #FFFFFF;
+  	margin:10px auto;
+    padding:0px;
+	}
+
+header{
+	margin:0 auto;
+	text-align:center;
+	display: block;
+}
+
+footer{
+	margin:0 auto;
+	text-align:center;
+	display: block;
+}
+footer>a:link {color:#A67A00; text-decoration: none}      /* unvisited link */
+footer>a:visited {color:#00FF00; text-decoration: none}  /* visited link */
+footer>a:hover {color:#FFCC40; text-decoration: none}  /* mouse over link */
+footer>a:active {color:#FFBB00; text-decoration: none}  /* selected link */
+
+#psych{
+	font-family: 'Yesteryear', cursive;
+	font-size: 160px;
+}
+
+#technologist{
+	font-family: 'Alegreya SC', serif;
+	font-size: 60px;
+}
+
+#main{
+	margin:0 auto;
+  	border: 0.25px dotted;
+	display: block;
+	width: 90%;
+}
+
+#menu{
+	width: 10%;
+}
+#mainpage{
+	width: 80%;
+}
+
+.subheading{
+	width: 700px;
+	text-align: left;
+	border: solid 0.25em grey;
+	font-weight: bold;
+	background-color: grey;
+}
+
+.dimlight a{
+    background-color: #282828;
+    padding: 0.25em;
+}
+
+br{ clear: style; }
+
+.widget {
+	width: 700px;
+	text-align: left;
+}
+.halfwidget {
+	width: 325px;
+}
+
+.table { display: table; }
+.table_row {
+	display: table-row;
+	width: 700px;
+}
+.table_cell {
+	display: table-cell;
+	width: 325px;
+}
+
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}ght;
+}
+.center{
+	text-align: center;
+}
+
+.italic{
+	font-style: italic;
+}
+.bold{
+	font-weight: bold;
+}
+
+
+/*************************************************************/
+/*
+	Page transition
+*/
