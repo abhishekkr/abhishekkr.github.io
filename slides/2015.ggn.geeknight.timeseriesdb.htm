@@ -502,7 +502,7 @@
             No partition, replication or atomic integrity.
           </p>
           <aside class="notes">
-              Links: <a href="https://oss.oetiker.ch/rrdtool/tut/rrdtutorial.en.html">RRD Tutorial</a>,<
+              Links: <a href="https://oss.oetiker.ch/rrdtool/tut/rrdtutorial.en.html">RRD Tutorial</a>,
                      <a href="https://oss.oetiker.ch/rrdtool/tut/cdeftutorial.en.html">Using RRD</a>,
                      <a href="https://oss.oetiker.ch/rrdtool/tut/rrd-beginners.en.html">Beginners</a>
           </aside>
@@ -515,6 +515,9 @@
           </p>
           <p class="fragment">
             <a href="https://graphite.readthedocs.org/en/latest/whisper.html">Whisper</a>: time-series db library based on RRD principles.
+          </p>
+          <p class="fragment">
+          Timestamp value is verified for its position while retrieval.
           </p>
           <p class="fragment">
           Multi-Archive Storage and Retrieval Behavior.<br/>
@@ -569,7 +572,7 @@
             Datapoints have fields and timestamp in nano epoch.
           </p>
           <p class="fragment">
-            No external dependencies.<br/>
+            No external dependencies. Ordered k/v.<br/>
             Started with LevelDB, then RocksDB.<br/>
             Default to BoltDB currently (v0.9.1 I think).
           </p>
