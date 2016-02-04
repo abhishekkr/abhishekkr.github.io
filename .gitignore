@@ -8,3 +8,5 @@ temp/*
 .goenv
 .config
 *.lock
+**/raguel-master
+raguel.tgz
