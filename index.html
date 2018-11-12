@@ -3,7 +3,8 @@
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/abk.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,10 +13,28 @@
   </head>
 
   <body>
-    <h3>ABK</h3>
+    <header>
+    </header>
+    <nav>
+      <div class="nav-wrapper gray lighten-2">
+        <a href="#!" class="brand-logo">ABK</a>
+        <a href="#" class="button-collapse" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+        <ul id="nav-not-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav"> <!-- side-nav need be initialized in JS, check last script tag -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
     <div class="container">
       <div id="me">
-        <div>AbhishekKr</div>
+        <div class="userid">AbhishekKr</div>
         <div>
           <span class="mailid dimlight"><a href="mailto:krabhishek@live.com">e-mail</a></span>
           |
@@ -29,50 +48,127 @@
         </div>
       </div>
       <hr/>
-		        <h5>Projects</h5>
-		        <div id="projects">
-		          <div>
-		          	<div class="item">
-                  <span class="dimlight bold"><a href="https://github.com/abhishekkr/goshare">goshare</a></span>
-                  (golang): a TimeSeries/NameSpace/KeyVal DataStore (using leveldb) over HTTP &nbsp;/or ZeroMQ<br/>
-		          	</div>
-		          	<div class="item">
-                  <span class="dimlight bold"><a href="https://github.com/abhishekkr/raguel">raguel</a></span>
-                  (bash): It's here to be the friend of Bourne Shell Gods to create minion scripts to serve the SYSTEMS.<br/>
-		          	</div>
-		          	<div class="item">
-                  <span class="dimlight bold"><a href="https://github.com/abhishekkr/n00bRAT">n00bRAT</a></span>
-                  (C Lang): a Remote Admin Toolkit (or Trojan) for POSiX (Linux) system working as HTTP Service<br/>
-		          	</div>
-		          	<div class="item">
-                  <span class="dimlight bold"><a href="https://github.com/abhishekkr/rubygem_rss_motor">rss-motor</a></span>
-                  (rubygem): an RSS Motor for your application to get rolling on using RSS Feeds<br/>
-		          	</div>
-		          	<div class="item">
-                  <span class="dimlight bold"><a href="https://github.com/abhishekkr/irc-qik-bot">irc-qik-bot</a></span>
-                  (rubygem): its a babbling IRC Bot very quick to setup and act ;) aiming to be intelligent<br/>
-		          	</div>
-		          	<div class="dimlight right italic">
-                  <a href="https://github.com/abhishekkr/">...all projects at github</a>
+      <h5 class="subheading"><a href="https://github.com/abhishekkr">foss projects</a></h5>
+      <div id="projects" class="flow-text">
+        <div class="cooler">
+          <div class="row">
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title"><a href="https://abhishekkr.github.com/dory">Dory</a></span>
+                  <p>
+                    an open secret sharing service for masses, where even admin can't see your secrets
+                  </p>
                 </div>
-		          </div>
-		        </div>
-      <hr/>
-		        <div>Blogs</div>
-		        <div id="blogs" class="widget">
-		          <div>
-		          	<div>
-                  <span class="dimlight italic">BlogHub: <a href="http://abhishekkr.wordpress.com">http://abhishekkr.wordpress.com</a></span>
-                  <span class="dimlight italic"><a href="./slides/index.html">Slides</a></span>
-		          	</div>
-		          </div>
-		        </div>
-      <hr/>
-            <div id="haunted_online" class="panel">
-              |_ <a href="mailto:abhikumar163@gmail.com"><img src="/assets/img/icon_gmail.png" alt="gmail-id" title="gmail-id" /></a> _|_ <a href="https://github.com/abhishekkr" target="_blank"><img src="/assets/img/icon_github.png" alt="abhishekkr@github" title="abhishekkr@github" /></a> _|_ <a href="https://twitter.com/abionic" target="_blank"><img src="/assets/img/icon_twitter.png" alt="abionic@twitter" title="abionic@twitter"/></a> _|
+              </div>
             </div>
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title"><a href="https://abhishekkr.github.com/gol">Gol</a></span>
+                  <p>
+                    a golang package suite with multi purpose helper libraries for encryption, db, http client, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title"><a href="https://abhishekkr.github.com/tutorials_as_code">Tutorials As Code</a></span>
+                  <p>
+                    reference tutorial as code/notes from once consumed talk, podcast, articles, others
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dimlight italic center">
+          <a href="https://github.com/abhishekkr/">more at github</a>
+        </div>
+        <div class="cool">
+          <div class="item">
+            <span class="badge">golang</span>
+            <span class="dimlight bold"><a href="https://github.com/abhishekkr/goshare">goshare</a></span>
+            <span class="description flow-text">
+            a TimeSeries/NameSpace/KeyVal DataStore (using leveldb) over HTTP &nbsp;/or ZeroMQ<br/>
+            </span>
+          </div>
+          <div class="item">
+            <span class="badge">bash</span>
+            <span class="dimlight bold"><a href="https://github.com/abhishekkr/raguel">raguel</a></span>
+            <span class="description flow-text">
+            It's here to be the friend of Bourne Shell Gods to create minion scripts to serve the SYSTEMS.<br/>
+            </span>
+          </div>
+          <div class="item">
+            <span class="badge">C Lang</span>
+            <span class="dimlight bold"><a href="https://github.com/abhishekkr/n00bRAT">n00bRAT</a></span>
+            <span class="description flow-text">
+            a Remote Admin Toolkit (or Trojan) for POSiX (Linux) system working as HTTP Service<br/>
+            </span>
+          </div>
+          <div class="item">
+            <span class="badge">rubygem</span>
+            <span class="dimlight bold"><a href="https://github.com/abhishekkr/rubygem_rss_motor">rss-motor</a></span>
+            <span class="description flow-text">
+            an RSS Motor for your application to get rolling on using RSS Feeds<br/>
+            </span>
+          </div>
+          <div class="item">
+            <span class="badge">rubygem</span>
+            <span class="dimlight bold"><a href="https://github.com/abhishekkr/irc-qik-bot">irc-qik-bot</a></span>
+            <span class="description flow-text">
+            its a babbling IRC Bot very quick to setup and act ;) aiming to be intelligent<br/>
+            </span>
+          </div>
+        </div>
+      </div>
       <hr/>
-            <footer>|_ <a href="mailto:abhikumar163@gmail.com">(c)AbhishekKr</a> _|_ <a href="https://github.com/abhishekkr" target="_blank">@Github</a> _|_ <a href="https://twitter.com/abionic" target="_blank">@Twitter</a> _|_ <a href="http://abhishekkr.wordpress.com" target="_blank">@BlogHub</a> _|_ <a href="http://abhishekkr.deviantart.com" target="_blank">@DeviantArt</a> _|</footer>
+      <h5 class="subheading">technical logs</h5>
+      <div id="blogs">
+        <div>
+          |_
+          <span class="dimlight italic"><a href="./tech-log/index.html">b.log</a></span>
+          _|_
+          <span class="dimlight italic"><a href="./slides/index.html">slides</a></span>
+          _|
+        </div>
+      </div>
+      <hr/>
+      <div id="haunted_online" class="panel">
+        |_
+        <a href="mailto:abhikumar163@gmail.com">
+            <img class="responsive-img" src="/assets/img/icon_gmail.png" alt="gmail-id" title="gmail-id" />
+        </a>
+        _|_
+        <a href="https://github.com/abhishekkr" target="_blank">
+          <img class="responsive-img" src="/assets/img/icon_github.png" alt="abhishekkr@github" title="abhishekkr@github" />
+        </a>
+        _|_
+        <a href="https://twitter.com/abionic" target="_blank">
+          <img class="responsive-img" src="/assets/img/icon_twitter.png" alt="abionic@twitter" title="abionic@twitter"/>
+        </a>
+        _|
+      </div>
+    </main>
+      <hr/>
+      <footer class="page-footer">
+        <div class="container">
+          |_
+          <a href="mailto:abhikumar163@gmail.com">(c)AbhishekKr</a>
+          _|_
+          <a href="https://github.com/abhishekkr" target="_blank">@Github</a>
+          _|_
+          <a href="https://twitter.com/abionic" target="_blank">@Twitter</a>
+          _|_
+          <a href="http://abhishekkr.wordpress.com" target="_blank">@OldBlogHub</a>
+          _|_
+          <a href="http://abhishekkr.deviantart.com" target="_blank">@DeviantArt</a>
+          _|
+        </div>
+      </footer>
     </div>
 
     <!-- Compiled and minified JavaScript -->

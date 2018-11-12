@@ -5,8 +5,182 @@
 ```meta-tags: aBionic concept xss bug whitepaper SiteHoster Site AbhishekKr Javascript subvert flaw Security Vulnerability solution ABK Exploit PoC hacking script```
 
 
+
 <div class="css-full-post-content js-full-post-content">
 
-<span class="Apple-style-span" style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;"><span style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;"></span></span></span><br /><div><i><b>It's still in experimental state, if you find some time please try it and let me know of your experience.</b></i></div><div><div><b><i><span style="border-collapse: separate; font-family: arial; font-size: small; font-style: normal; font-weight: normal;"><br /></span></i></b></div><div>Video Demo of the same PoC:&nbsp;<a href="http://www.youtube.com/watch?v=ENiiAccY1v0" style="color: #ed1c24;" target="_blank">http://www.youtube.com/watch?v=ENiiAccY1v0</a><br /><br /></div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;"></span></span><br /><div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">Project Base:&nbsp;<a href="http://sourceforge.net/downloads/sitehoster/v1.0beta%20RC1/" style="color: #ed1c24;" target="_blank">http://sourceforge.net/downloads/sitehoster/v1.0beta%20RC1/</a></span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;"><br /></span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">WhitePaper is also available at SourceForge link above</span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">&nbsp;and at :&nbsp;<a href="http://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss" style="color: #ed1c24;" target="_blank">http://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss</a></span></span></div></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">I was working on a XSS-Patch PoC, which I now feel works proper enough to prove its point.</span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;"><b>This neither require Web-Developers for any Filtering/Validation, nor any javascript blocking add-on on user's browser.</b></span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;"><br /></span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">I'm not good at explaining still I've tried to do that in the above linked WhitePaper.</span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;"><br /></span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">And the ZIP file can be extracted, having 'StartDemo.bat' to be executed to start the server already patched with XSS Subverting Module.</span></span></div><div><span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><span style="font-family: arial; font-size: small;">Then browse, '<a href="http://localhost/tweet.htm" style="color: #ed1c24;" target="_blank">http://localhost/tweet.htm</a>' in any browser... and it lets you Submit any text to Server w/o validation which is as it is saved there. But when retrieved on 'Read...' remains inactive for any <script> inserted.</div><div>          </div><div>         It would be great if any expert advice/comment could be given... Usable, Waste, Failure, etc.</div><div>          </div><blockquote style="margin: 0px 0px 0px 40px; border-style: none; padding: 0px;">         <div>         <b>NOTE:</b><span>&nbsp;</span>for PoC to execute properly it requires 'PYTHON' to be installed and added to SYSTEM PATH</div><div>         as server-side logic is coded in Python</div><div>         If you don't have Python installed, then too you can check it by, opening '<a href="http://localhost/test1.htm" target="_blank" style="color: rgb(237, 28, 36);">http://localhost/test1.htm</a>' which would make the <SCRIPT/> injected in it's <BODY/> inactive. Or, you can yourself write any quick HTML+JS, where none of the JS injected in BODY would work when browsed over this Server. The Server Side Scripting implementation currently is not standard CGI, its a quick approach to achieve script execution at server based on GET Request Variables and get MarkUp Output.<br clear="all"></div></blockquote></span></span><br clear="all"></div><span style="font-family: arial,sans-serif; font-size: 13px; border-collapse: collapse;"><b><i>Note: its there to subvert user-level JS functions</i></b></span><div>         <font><span style="border-collapse: collapse;"><b><i></i></b></span></font></div><div>         <font><span style="border-collapse: collapse;"><b><i>Once this completes, I'll be implementing my SQL-Injection Counter-measure to the server.</i></b></span></font></div></script></span></span></div></div>
+
+<span class="Apple-style-span" style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+<span class="Apple-style-span" style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;">
+<span style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;">
+</span>
+</span>
+</span>
+
+<div>
+<i>
+<b>It's still in experimental state, if you find some time please try it and let me know of your experience.
+</b>
+</i>
+</div>
+<div>
+<div>
+<b>
+<i>
+<span style="border-collapse: separate; font-family: arial; font-size: small; font-style: normal; font-weight: normal;">
+
+</span>
+</i>
+</b>
+</div>
+<div>Video Demo of the same PoC:&nbsp;
+<a href="http://www.youtube.com/watch?v=ENiiAccY1v0" style="color: #ed1c24;" target="_blank">http://www.youtube.com/watch?v=ENiiAccY1v0
+</a>
+
+
+</div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">
+</span>
+</span>
+
+<div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">Project Base:&nbsp;
+<a href="http://sourceforge.net/downloads/sitehoster/v1.0beta%20RC1/" style="color: #ed1c24;" target="_blank">http://sourceforge.net/downloads/sitehoster/v1.0beta%20RC1/
+</a>
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">
+
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">WhitePaper is also available at SourceForge link above
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">&nbsp;and at :&nbsp;
+<a href="http://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss" style="color: #ed1c24;" target="_blank">http://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss
+</a>
+</span>
+</span>
+</div>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">I was working on a XSS-Patch PoC, which I now feel works proper enough to prove its point.
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">
+<b>This neither require Web-Developers for any Filtering/Validation, nor any javascript blocking add-on on user's browser.
+</b>
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">
+
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">I'm not good at explaining still I've tried to do that in the above linked WhitePaper.
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">
+
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">And the ZIP file can be extracted, having 'StartDemo.bat' to be executed to start the server already patched with XSS Subverting Module.
+</span>
+</span>
+</div>
+<div>
+<span style="border-collapse: separate; font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<span style="font-family: arial; font-size: small;">Then browse, '
+<a href="http://localhost/tweet.htm" style="color: #ed1c24;" target="_blank">http://localhost/tweet.htm
+</a>' in any browser... and it lets you Submit any text to Server w/o validation which is as it is saved there. But when retrieved on 'Read...' remains inactive for any
+<script> inserted.
+</div>
+<div>
+</div>
+<div>         It would be great if any expert advice/comment could be given... Usable, Waste, Failure, etc.
+</div>
+<div>
+</div>
+<blockquote style="margin: 0px 0px 0px 40px; border-style: none; padding: 0px;">
+<div>
+<b>NOTE:
+</b>
+<span>&nbsp;
+</span>for PoC to execute properly it requires 'PYTHON' to be installed and added to SYSTEM PATH
+</div>
+<div>         as server-side logic is coded in Python
+</div>
+<div>         If you don't have Python installed, then too you can check it by, opening '
+<a href="http://localhost/test1.htm" target="_blank" style="color: rgb(237, 28, 36);">http://localhost/test1.htm
+</a>' which would make the
+<SCRIPT/>
+ injected in it's
+<BODY/>
+ inactive. Or, you can yourself write any quick HTML+JS, where none of the JS injected in BODY would work when browsed over this Server. The Server Side Scripting implementation currently is not standard CGI, its a quick approach to achieve script execution at server based on GET Request Variables and get MarkUp Output.
+<br clear="all">
+</div>
+</blockquote>
+</span>
+</span>
+<br clear="all">
+</div>
+<span style="font-family: arial,sans-serif; font-size: 13px; border-collapse: collapse;">
+<b>
+<i>Note: its there to subvert user-level JS functions
+</i>
+</b>
+</span>
+<div>
+<font>
+<span style="border-collapse: collapse;">
+<b>
+<i>
+</i>
+</b>
+</span>
+</font>
+</div>
+<div>
+<font>
+<span style="border-collapse: collapse;">
+<b>
+<i>Once this completes, I'll be implementing my SQL-Injection Counter-measure to the server.
+</i>
+</b>
+</span>
+</font>
+</div>
+</script>
+</span>
+</span>
+</div>
+</div>
+
 
 </div>

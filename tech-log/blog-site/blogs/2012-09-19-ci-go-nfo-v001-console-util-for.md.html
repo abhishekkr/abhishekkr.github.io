@@ -1,69 +1,92 @@
 <div class="css-full-post-content js-full-post-content">
 <div dir="ltr" style="text-align: left;" trbidi="on">
-<br />
 <div class="separator" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em; text-align: center;">
-<a href="http://abhishekkr.github.com/ci-go-nfo" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-XBit_cihSts/UFoCEAy97FI/AAAAAAAAB0U/es4_QYDyS04/s1600/cigonfo.jpg" /></a>
+<p><a href="http://abhishekkr.github.com/ci-go-nfo" target="_blank"> <img border="0" src="http://4.bp.blogspot.com/-XBit_cihSts/UFoCEAy97FI/AAAAAAAAB0U/es4_QYDyS04/s1600/cigonfo.jpg" /></p>
+<p></a></p>
 </div>
-<br /><a href="http://abhishekkr.github.com/ci-go-nfo" target="_blank"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ci-go-nfo</span></a> v0.0.1<br /><br /><br /><br />Just a rubygem console utility to get focussed INFO about your Go Continuous Integration pipeline easily, no more switching again to browsers.<br /><br />@<a href="https://rubygems.org/gems/ci-go-nfo" target="_blank">RubyGems</a>: <a href="https://rubygems.org/gems/ci-go-nfo">https://rubygems.org/gems/ci-go-nfo</a><br /><br />@<a href="https://github.com/abhishekkr/ci-go-nfo" target="_blank">GitHub</a>:  <a href="https://github.com/abhishekkr/ci-go-nfo">https://github.com/abhishekkr/ci-go-nfo</a><br /><br /><br /><i><b><span style="font-size: large;">Installation</span> </b></i><br /><br /><b><span class="math">$&lt;/b&gt; gem install ci-go-nfo&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-size: large;&quot;&gt;&lt;i&gt;&lt;b&gt;Usage   Ci-Go-Nfo ver.0.0.1&lt;/b&gt;&lt;/i&gt;&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;to set-up credential config for your go-ci&lt;br /&gt;$</span> <b>ci-go-nfo setup</b><br />it asks for<br />(a.) the location where you want to store your configuration file<br />(b.) the URL for your Go Server like http://my.go.server:8153<br />(c.) then username and password (create a read-only a/c for it) <br /><br /><br /><br />to show go-ci info of all runs<br />$ <b>ci-go-nfo</b><br /><br />to show go-ci info of failed runs<br />$ <b>ci-go-nfo fail</b><br /><br />to show go-ci info of passed runs<br />$ <b>ci-go-nfo pass</b><br /><br />_____<br /><br />.....more to come<br /><br /><br /><span style="font-size: large;">output example: </span><br /><br /> $ <b>ci-go-nfo setup</b><br />
+<p><a href="http://abhishekkr.github.com/ci-go-nfo" target="_blank"> <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ci-go-nfo </span> </a> v0.0.1</p>
+<p>Just a rubygem console utility to get focussed INFO about your Go Continuous Integration pipeline easily, no more switching again to browsers.</p>
+<p>@ <a href="https://rubygems.org/gems/ci-go-nfo" target="_blank">RubyGems </a>: <a href="https://rubygems.org/gems/ci-go-nfo">https://rubygems.org/gems/ci-go-nfo </a></p>
+<p>@ <a href="https://github.com/abhishekkr/ci-go-nfo" target="_blank">GitHub </a>:  <a href="https://github.com/abhishekkr/ci-go-nfo">https://github.com/abhishekkr/ci-go-nfo </a></p>
+<p><i> <b> <span style="font-size: large;">Installation </span>  </b> </i></p>
+<p><b>$ </b> gem install ci-go-nfo</p>
+<p><span style="font-size: large;"> <i> <b>Usage Ci-Go-Nfo ver.0.0.1 </b> </i>  </span></p>
+<p>to set-up credential config for your go-ci $ <b>ci-go-nfo setup </b> it asks for (a.) the location where you want to store your configuration file (b.) the URL for your Go Server like http://my.go.server:8153 (c.) then username and password (create a read-only a/c for it)</p>
+<p>to show go-ci info of all runs $ <b>ci-go-nfo </b></p>
+<p>to show go-ci info of failed runs $ <b>ci-go-nfo fail </b></p>
+<p>to show go-ci info of passed runs $ <b>ci-go-nfo pass </b></p>
+<hr />
+<p>.....more to come</p>
+<p><span style="font-size: large;">output example: </span></p>
+<p> $ <b>ci-go-nfo setup </b></p>
 <div style="background-color: black;">
-<span style="color: #999999;"> </span><span style="color: red;"><span style="color: #999999;">Store sensitive Go Configs in file {current file: /home/myuser/.go.abril}: </span><br style="color: #999999;" /><br style="color: #999999;" /><span style="color: #999999;"> Enter Base URL of Go Server {like http://<ip>:8153}: <br />                                                           <span style="color: #cccccc;">http://my.go.server:8153</span></ip></span><br style="color: #999999;" /><br style="color: #999999;" /><span style="color: #999999;"> This is better to be ReadOnly account details...</span><br style="color: #999999;" /><br style="color: #999999;" /><span style="color: #999999;"> Enter Log-in UserName: <span style="color: #cccccc;">go_user</span></span><br style="color: #cccccc;" /><br style="color: #999999;" /><span style="color: #999999;"> Password: <span style="color: #cccccc;">restrictedpassword</span></span></span><b style="color: #cccccc;"><br /></b>
+<p><span style="color: #999999;">  </span> <span style="color: red;"> <span style="color: #999999;">Store sensitive Go Configs in file {current file: /home/myuser/.go.abril}: </span> <br style="color: #999999;" /></p>
+<p><br style="color: #999999;" /></p>
+<p><span style="color: #999999;"> Enter Base URL of Go Server {like http:// <ip>:8153}:                                                            <span style="color: #cccccc;">http://my.go.server:8153 </span> </ip> </span> <br style="color: #999999;" /></p>
+<p><br style="color: #999999;" /></p>
+<p><span style="color: #999999;"> This is better to be ReadOnly account details... </span> <br style="color: #999999;" /></p>
+<p><br style="color: #999999;" /></p>
+<p><span style="color: #999999;"> Enter Log-in UserName: <span style="color: #cccccc;">go_user </span> </span> <br style="color: #cccccc;" /></p>
+<p><br style="color: #999999;" /></p>
+<p><span style="color: #999999;"> Password: <span style="color: #cccccc;">restrictedpassword </span> </span> </span> <b style="color: #cccccc;"></p>
+<p></b></p>
 </div>
 <div style="color: #cccccc;">
-<br />
+
 </div>
- $ <b>ci-go-nfo pass</b><br />
+<p> $ <b>ci-go-nfo pass </b></p>
 <div style="background-color: black;">
-  <b><span style="color: red;">my_pipeline -&gt; specs -&gt; specs</span></b>
-</div>
-<div style="background-color: black;">
-  <b style="color: lime;">Success</b> <span style="color: #999999;"> for run#</span><span style="color: #6aa84f;">2</span> <span style="color: #f1c232;">at 2012-09-19T04:24:38</span>
+<p>  <b> <span style="color: red;">my_pipeline -&gt; specs -&gt; specs </span> </b></p>
 </div>
 <div style="background-color: black;">
-  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/specs/2/specs</span>
+<p>  <b style="color: lime;">Success </b>  <span style="color: #999999;"> for run# </span> <span style="color: #6aa84f;">2 </span> <span style="color: #f1c232;">at 2012-09-19T04:24:38 </span></p>
 </div>
 <div style="background-color: black;">
-<br />  <b style="color: red;">my_pipeline -&gt; package -&gt;gemify</b>
+<p>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/specs/2/specs </span></p>
 </div>
 <div style="background-color: black;">
-  <b><span style="color: lime;">Success</span></b> <span style="color: #cccccc;"> f<span style="color: #999999;">or run#</span></span><span style="color: #6aa84f;">1</span> <span style="color: #f1c232;">at 2012-09-19T07:04:39</span>
+<p>  <b style="color: red;">my_pipeline -&gt; package -&gt;gemify </b></p>
 </div>
 <div style="background-color: black;">
-  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/package/1/gemify</span>
-</div>
-<br /> $ <b>ci-go-nfo fail</b><br />
-<div style="background-color: black;">
-  <b><span style="color: red;">your_pipeline -&gt; smoke -&gt; cukes</span></b>
+<p>  <b> <span style="color: lime;">Success </span> </b>  <span style="color: #cccccc;"> f <span style="color: #999999;">or run# </span> </span> <span style="color: #6aa84f;">1 </span> <span style="color: #f1c232;">at 2012-09-19T07:04:39 </span></p>
 </div>
 <div style="background-color: black;">
-  <b style="color: lime;">Failure</b> <span style="color: #999999;"> for run#</span><span style="color: #6aa84f;">5</span> <span style="color: #f1c232;">at 2012-09-19T04:24:38</span>
+<p>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/package/1/gemify </span></p>
+</div>
+<p> $ <b>ci-go-nfo fail </b></p>
+<div style="background-color: black;">
+<p>  <b> <span style="color: red;">your_pipeline -&gt; smoke -&gt; cukes </span> </b></p>
 </div>
 <div style="background-color: black;">
-  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/your_pipeline/7/smoke/5/cukes</span>
-</div>
-<br /> $ <b>ci-go-nfo </b><br />
-<div style="background-color: black;">
-  <b><span style="color: red;">my_pipeline -&gt; specs -&gt; specs</span></b>
+<p>  <b style="color: lime;">Failure </b>  <span style="color: #999999;"> for run# </span> <span style="color: #6aa84f;">5 </span> <span style="color: #f1c232;">at 2012-09-19T04:24:38 </span></p>
 </div>
 <div style="background-color: black;">
-  <b style="color: lime;">Success</b> <span style="color: #999999;"> for run#</span><span style="color: #6aa84f;">2</span> <span style="color: #f1c232;">at 2012-09-19T04:24:38</span>
+<p>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/your_pipeline/7/smoke/5/cukes </span></p>
+</div>
+<p> $ <b>ci-go-nfo </b></p>
+<div style="background-color: black;">
+<p>  <b> <span style="color: red;">my_pipeline -&gt; specs -&gt; specs </span> </b></p>
 </div>
 <div style="background-color: black;">
-  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/specs/2/specs</span>
+<p>  <b style="color: lime;">Success </b>  <span style="color: #999999;"> for run# </span> <span style="color: #6aa84f;">2 </span> <span style="color: #f1c232;">at 2012-09-19T04:24:38 </span></p>
 </div>
 <div style="background-color: black;">
-<br />  <b style="color: red;">my_pipeline -&gt; package -&gt;gemify</b>
+<p>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/specs/2/specs </span></p>
 </div>
 <div style="background-color: black;">
-  <b><span style="color: lime;">Success</span></b> <span style="color: #cccccc;"> f<span style="color: #999999;">or run#</span></span><span style="color: #6aa84f;">1</span> <span style="color: #f1c232;">at 2012-09-19T07:04:39</span>
+<p>  <b style="color: red;">my_pipeline -&gt; package -&gt;gemify </b></p>
 </div>
 <div style="background-color: black;">
-  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/package/1/gemify</span>
+<p>  <b> <span style="color: lime;">Success </span> </b>  <span style="color: #cccccc;"> f <span style="color: #999999;">or run# </span> </span> <span style="color: #6aa84f;">1 </span> <span style="color: #f1c232;">at 2012-09-19T07:04:39 </span></p>
 </div>
 <div style="background-color: black;">
-<br />
+<p>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/my_pipeline/10/package/1/gemify </span></p>
 </div>
 <div style="background-color: black;">
-  <b><span style="color: red;">your_pipeline -&gt; smoke -&gt; cukes</span></b>  <b style="color: lime;">Failure</b> <span style="color: #999999;"> for run#</span><span style="color: #6aa84f;">5</span> <span style="color: #f1c232;">at 2012-09-19T04:24:38</span>  <span style="color: #999999;">details at</span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/your_pipeline/7/smoke/5/cukes</span>
+
+</div>
+<div style="background-color: black;">
+<p>  <b> <span style="color: red;">your_pipeline -&gt; smoke -&gt; cukes </span> </b>  <b style="color: lime;">Failure </b>  <span style="color: #999999;"> for run# </span> <span style="color: #6aa84f;">5 </span> <span style="color: #f1c232;">at 2012-09-19T04:24:38 </span>  <span style="color: #999999;">details at </span> <span style="color: #3d85c6;">http://my.go.server:8153/go/tab/build/detail/your_pipeline/7/smoke/5/cukes </span></p>
 </div>
 </div>
 </div>

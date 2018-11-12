@@ -5,8 +5,49 @@
 ```meta-tags: server http SimpleHTTPServer howto file-sharing file python web```
 
 
+
 <div class="css-full-post-content js-full-post-content">
 
-<b>is Python installed, you already have Simple HTTP Server</b><br /><br />if you need any simple plain web-server on your machine to server files (html or else)<br /><b>and</b><br />if you have PYTHON installed over your machine<br /><b>then</b><br />you don't need anything else<br /><b>because</b><br />you can run PYTHON itself in Simple HTTP Server mode to serve files from any directory you need<br /><b>by</b><br />following below steps<br />Step#1.<br />[ opening shell/command-prompt ]<br />Step#2.<br />[ $&gt;cd (change dir) to directory you want to be root of your server ]<br />Step#3.<br />[ run this command without quotes <b><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">"python -m SimpleHTTPServer"</span></b> ]<br />Finally, [ Say abra-ca-dabra... ] Thanks...<br /><b>now</b><br />you have a Simple HTTP Server running, that can be accessed at Port 8000 of your Server's IP/Name<br /><b>so</b><br />you can test it by browsing in any web browser at http://YOUR_SERVER_IP:8000/
+
+<b>is Python installed, you already have Simple HTTP Server
+</b>
+
+if you need any simple plain web-server on your machine to server files (html or else)
+
+<b>and
+</b>
+if you have PYTHON installed over your machine
+
+<b>then
+</b>
+you don't need anything else
+
+<b>because
+</b>
+you can run PYTHON itself in Simple HTTP Server mode to serve files from any directory you need
+
+<b>by
+</b>
+following below steps
+Step#1.
+[ opening shell/command-prompt ]
+Step#2.
+[ $&gt;cd (change dir) to directory you want to be root of your server ]
+Step#3.
+[ run this command without quotes
+<b>
+<span style="font-family: &quot;Courier New&quot;,Courier,monospace;">"python -m SimpleHTTPServer"
+</span>
+</b> ]
+Finally, [ Say abra-ca-dabra... ] Thanks...
+
+<b>now
+</b>
+you have a Simple HTTP Server running, that can be accessed at Port 8000 of your Server's IP/Name
+
+<b>so
+</b>
+you can test it by browsing in any web browser at http://YOUR_SERVER_IP:8000/
+
 
 </div>
