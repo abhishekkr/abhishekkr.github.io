@@ -5,27 +5,38 @@
 <b># Components?</b>
 </h3>
 <br />OpenStack Cloud Platform constitutes of mainly following components:<br />
-<ul style="text-align: left;"><li>
+<ul style="text-align: left;">
+<li>
 <i><b>Compute</b>:</i> <b>Nova</b><br />Brings up and maintains operations related to virtual server as per requirement.<br />~like aws ec2
-</li><li>
+</li>
+<li>
 <i><b>Storage</b>: </i><b>Swift</b><br />Allows you to store, retrieve &amp; remove objects (files).<br />~like aws s3
-</li><li>
+</li>
+<li>
 <i><b>Image Registry/Delivery</b>: </i><b>Glance</b><br />Processes metadata for disk images, manages read/write/delete for actual image files using  'Swift' or similar scalable file storage service.<br />~like aws ami
-</li><li>
+</li>
+<li>
 <i><b>Network Management</b>:</i> <b>Quantum/Melange</b><br />Provides all the networking mechanisms required in any instance or environment as a service. Handels network interface cards plug/un-plug actions, ip allocation procedures along-with capability enhancement possible to virtual switches.
-</li><li>
+</li>
+<li>
 <i><b>Block Storage</b>: </i><b>Cinder</b><br />Enables to attach volumes for persistent usage. Detach them, snapshot them.<br />~like aws ebs
-</li><li>
+</li>
+<li>
 <i><b>WebUI</b>: </i><b>Horizon</b><br />Provides usability improvement for users or projects for managing compute nodes, object storage resources, quota usages and more in a detailed web-app way.<br />~like aws web dashboard
-</li><li>
+</li>
+<li>
 <i><b>Authentication</b>: </i><b>Keystone</b><br />Identity management system, providing apis to all other OpenStack components to query for authorization.
-</li><li>
+</li>
+<li>
 <b style="font-style: italic;">Billing Service</b><i>: </i><b>Ceilometer</b> (preview)<br />Analyzes quantity, cost-priority and hence billing of all the tasks performed at cloud.
-</li><li>
+</li>
+<li>
 <i><b>Cloud Template</b>:</i> <b>Heat</b> (under construction)<br />Build your entire desired cloud setup providing OpenStack a Template for it.<br />~like aws cloudformation
-</li><li>
+</li>
+<li>
 <b style="font-style: italic;">OpenStack Common</b><i>: </i><b>OSLO</b> (<i>tenure code</i>)<br />Supposed to contain all common libraries of shared infrastructure code in OpenStack.
-</li></ul>
+</li>
+</ul>
 <br />Hypervisors are software/firmware/hardware that enables to create, run and monitor virtual machines. OpenStack Compute supports multiple hypervisors like KVM, LXC, QEMU, XEN, VMWARE &amp; more.<br /><br />Message Queue Service is used by most of the OpenStack Compute services to communicate with each other using AMQP (Advanced Message Queue Protocol) supporting async calls and callbacks.<br /><br />---<br /><br />
 <h3 style="text-align: left;">
 <b># Weaving of Components</b>
@@ -66,23 +77,32 @@
 <b><i>More Links:</i></b>
 </h4>
 <br />
-<ul style="text-align: left;"><li>
+<ul style="text-align: left;">
+<li>
 (article) <a href="http://ken.pepple.info/openstack/2012/09/25/openstack-folsom-architecture/" target="_blank">Folsom Architecture by Ken Pepple</a>
-</li><li>
+</li>
+<li>
 (video) Mark Collier on <a href="http://www.youtube.com/watch?v=dclcFiVvO7g" target="_blank">'Overview of OpenStack &amp; Openstack foundation'</a>
-</li><li>
+</li>
+<li>
 (video) Sandy Walsh on <a href="http://www.youtube.com/watch?v=bCsw2kkIWyw" target="_blank">'Introduction to OpenStack'</a>
-</li><li>
+</li>
+<li>
 (work) <a href="http://launchpad.net/openstack">http://launchpad.net/openstack</a>
-</li><li>
+</li>
+<li>
 (wiki) <a href="http://wiki.openstack.org/">http://wiki.openstack.org</a>
-</li><li>
+</li>
+<li>
 (join) <a href="http://planet.openstack.org/">http://planet.openstack.org</a>
-</li><li>
+</li>
+<li>
 (irc) Freenode #openstack #openstack-dev
-</li><li>
+</li>
+<li>
 RedDward : Database as a Service for OpenStack : <a href="https://github.com/stackforge/reddwarf">https://github.com/stackforge/reddwarf</a>
-</li></ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="css-full-comments-content js-full-comments-content">

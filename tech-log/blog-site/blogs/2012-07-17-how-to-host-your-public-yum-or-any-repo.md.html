@@ -56,7 +56,7 @@ create the required linux distro, release branch
 copy all required RPMs in that distro, release branch
 </div>
 <blockquote class="tr_bq">
-<b>$ cp</b> &lt;ALL_MY_RPMS_of_<em>DISTRO</em>ReleaseVer_BaseArch&gt; yummy/&lt;distro&gt;&lt;releasever&gt;/&lt;basearch&gt;/
+<b>$ cp</b> &lt;ALL_MY_RPMS_of__DISTRO_ReleaseVer_BaseArch&gt; yummy/&lt;distro&gt;&lt;releasever&gt;/&lt;basearch&gt;/
 </blockquote>
 <div>
 prepare yum-repo-listing using createrepo command
@@ -69,13 +69,17 @@ now, place a file 'flat_web/yum-my-el6&lt;or-whichever&gt;.repo' with content 
 </div>
 <blockquote class="tr_bq">
 <span style="background-color: white;">[yum-my-</span>&lt;<span style="background-color: white;">distro</span>&gt;&lt;<span style="background-color: white;">releasever</span>&gt;<span style="background-color: white;">-</span>&lt;<span style="background-color: white;">basearch</span>&gt;<span style="background-color: white;">]</span><span style="background-color: white;"> </span>
-</blockquote><blockquote class="tr_bq">
+</blockquote>
+<blockquote class="tr_bq">
 name=MY-YUM-MY<span style="background-color: white;"> </span>
-</blockquote><blockquote class="tr_bq">
-baseurl=<a href="http://youryummy.appspot.com/yummy/%3Cdistro%3E$releasever/$basearch">http://MY-YUM-MY.appspot.com/yummy/<span style="color: black;">&lt;</span>distro<span style="color: black;">&gt;</span><span class="math"><em>r</em><em>e</em><em>l</em><em>e</em><em>a</em><em>s</em><em>e</em><em>v</em><em>e</em><em>r</em>/</span>basearch</a><span style="background-color: white;"> </span>
-</blockquote><blockquote class="tr_bq">
+</blockquote>
+<blockquote class="tr_bq">
+baseurl=<a href="http://youryummy.appspot.com/yummy/%3Cdistro%3E$releasever/$basearch">http://MY-YUM-MY.appspot.com/yummy/<span style="color: black;">&lt;</span>distro<span style="color: black;">&gt;</span><span class="math inline"><em>r</em><em>e</em><em>l</em><em>e</em><em>a</em><em>s</em><em>e</em><em>v</em><em>e</em><em>r</em>/</span>basearch</a><span style="background-color: white;"> </span>
+</blockquote>
+<blockquote class="tr_bq">
 <a href="http://youryummy.appspot.com/yummy/%3Cdistro%3E$releasever/$basearch"></a>enabled=1<span style="background-color: white;"> </span>
-</blockquote><blockquote class="tr_bq">
+</blockquote>
+<blockquote class="tr_bq">
 gpgcheck=0
 </blockquote>
 <div>

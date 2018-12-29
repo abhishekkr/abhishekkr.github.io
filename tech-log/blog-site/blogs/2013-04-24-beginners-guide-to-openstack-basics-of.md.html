@@ -11,27 +11,38 @@
 <a href="http://4.bp.blogspot.com/-R7pWfCkhU30/UXWJaktN-YI/AAAAAAAAB3Y/kUl9sDlomSU/s1600/openstack_p2_components.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="115" src="http://4.bp.blogspot.com/-R7pWfCkhU30/UXWJaktN-YI/AAAAAAAAB3Y/kUl9sDlomSU/s640/openstack_p2_components.jpg" width="480" /></a>
 </div>
 <br /><br /><br /><br /><br /><br /><br /><br />
-<ul style="text-align: left;"><li>
+<ul style="text-align: left;">
+<li>
 <b>Nova API</b> : supports OpenStack Compute API, Amazon's EC2 API and powerful Admin API (for privileged users). It's used to initiate most of orchestration activities and policies (like Quota). It gets communicated over HTTP, converts the requests to commands further contacting other components via Message Broker and HTTP for ObjectStore. It's a <a href="http://wsgi.readthedocs.org/en/latest/what.html" target="_blank">WSGI</a> application which routes and authenticates requests.
-</li><li>
+</li>
+<li>
 <b>Nova Compute</b> : worker daemon taking orders from its Message Broker and perform virtual machine create/delete tasks using Hypervisor's API. It also updates status of its tasks in Database.
-</li><li>
+</li>
+<li>
 <b>Nova Scheduler</b> : decides which Nova Compute Host to allot for virtual machine request.
-</li><li>
+</li>
+<li>
 <b>Network Manager</b> : worker daemon picking network related tasks from its Message Broker and performing those. <i>OpenStack's Quantum </i>now with <i>Grizzly</i> release can be opted instead of <i>nova-network</i>. Tasks like maintaining IP Forwarding, Network Bridges and VLANs get covered.
-</li><li>
+</li>
+<li>
 <b>Volume Manager</b> : handles attach/detach of persistent block storage volumes to virtual machines (similar to Amazon's EBS). This functionality has been extracted to <i>OpenStack's Cinder</i>. It's an ISCSI solution utilizing <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)" target="_blank">Logical Volume Manager</a>. Network Manager doesn't interfere in Cinder's tasks but need to be setup for Cinder to be used.
-</li><li>
+</li>
+<li>
 <b>Authorization Manager</b> : interfaces authorized APIs usage for Users, Projects and Roles. It communicates with <i>OpenStack's KeyStone</i> for details.
-</li><li>
+</li>
+<li>
 <b>WebUI</b> : <i>OpenStack's Horizon</i> communicates with Nova API for Dashboard interfacing.
-</li><li>
+</li>
+<li>
 <b>Message Broker</b> : All components of Nova communicate with each other in a non-blocking callback-oriented manner using AMQP protocol well supported by RabbitMQ, Apache QPid. There is also emerging support for ZeroMQ integration as Message Queue. It's like central task list shared and updated by all Nova components.
-</li><li>
+</li>
+<li>
 <b>ObjectStore</b> : It's a simple file-based storage (like Amazon's S3) for images. This can be replaced with OpenStack's Glance.
-</li><li>
+</li>
+<li>
 <b>Database</b> : used to gather build times, run states of virtual machines. It has details around instance types available, networks available (if nova-network), and projects. Any database supported by SQLAlchemy can be used. It's central information hub for all Nova components.
-</li></ul>
+</li>
+</ul>
 <br /><br />---<br /><br /><b># API Style</b><br />Interface is mostly RESTful. <a href="http://routes.readthedocs.org/en/latest/" target="_blank">Routes (python re-implementation of Rails route system) packages</a> maps URIs to action methods on controller classes.<br />Each HTTP Request to Compute requires specific authentication credentials required. Multiple authentication schemes can be allowed for a Compute node, provider determines the one to be used.<br /><br />---<br /><br /><b># Threading Model</b><br />Uses Green Thread implementation by design using <a href="http://eventlet.net/" target="_blank">eventlet</a> and <a href="http://greenlet.readthedocs.org/en/latest/" target="_blank">greenlet</a> libraries. This results into single process thread for O.S. with it's blocking I/O issues. Though single reduces race conditions to great extent, to eliminate them further in suspicious scenarios use decorator <i><span class="citation">@lockutils.synchronized</span>('lock_name')</i> over methods to be protected from it.<br />If any action is long-running, it should have methods with desired process-state location triggering eventlet context switch. Placing something like following code-piece will switch context to waiting threads, if any. And will continue on current thread without any delay if there is no other thread in wait.<br />
 <blockquote class="tr_bq">
 <span style="font-family: inherit;">from eventlet import <a href="http://eventlet.net/doc/modules/greenthread.html?highlight=greenthread#eventlet.greenthread" target="_blank">greenthread</a><br />greenthread.sleep(0)</span>
@@ -49,19 +60,26 @@ $ ./tools/with_venv.sh <command></command>
 $ ./run_tests.sh
 </blockquote>
 <br />---<br /><br /><b># Terminology</b><br /><br />
-<ul style="text-align: left;"><li>
+<ul style="text-align: left;">
+<li>
 <i>Server</i>: Virtual Machines created inside Compute System, required Flavor &amp; Image detail.
-</li><li>
+</li>
+<li>
 <i>Flavor</i>: Represents unique hardware configurations with disk space, memory and CPU time priority
-</li><li>
+</li>
+<li>
 <i>Image</i>: System Image File used to create/rebuild a Server
-</li><li>
+</li>
+<li>
 <i>Reboot</i>: Soft Server Reboot sends a graceful shutdown signal. Hard Reboot does power reset.
-</li><li>
+</li>
+<li>
 <i>Rebuild</i>: Removes all data on Server and replaces it with specified image. Server's IP Address and ID remains same.
-</li><li>
+</li>
+<li>
 <i>Resize</i>: Converts existing server to a different flavor. All resize need to be explicitly confirmed, only then the original server is removed. After 24hrs. delay, there is an automated confirmation.
-</li></ul>
+</li>
+</ul>
 <br /><br />
 </div>
 </div>

@@ -1,26 +1,18 @@
 <div class="css-full-post-content js-full-post-content">
 <div dir="ltr" style="text-align: left;" trbidi="on">
-Past some time while trying up some set-up based on Message Queue at infrastructure... needed a quick to set-up, localhost friendly, network available Message Queue service to try out ideas.<br />So here is Mess(age)Q(ueue). Something quickly thrown together. Would work later to get it more performance oriented, good to go with smaller projects.<br /><br /><span class="citation">@GitHub</span>:       <a href="https://github.com/abhishekkr/messQ">https://github.com/abhishekkr/messQ</a><br /><span class="citation">@RubyGems</span>: <a href="https://rubygems.org/gems/messQ">https://rubygems.org/gems/messQ</a><br />_________________________<br /><br /><span style="font-size: large;">A Quick Tryout</span><br /><br /><b>[+] Install</b><br /><b><span class="math">$&lt;/b&gt; gem install messQ --no-ri --no-rdoc&lt;br /&gt;&lt;b&gt;[+] Start Server (starts at 0.0.0.0 on port#5566)&lt;/b&gt;&lt;br /&gt;&lt;div&gt;&lt;b&gt;$</span></b> messQ --start
+Past some time while trying up some set-up based on Message Queue at infrastructure... needed a quick to set-up, localhost friendly, network available Message Queue service to try out ideas.<br />So here is Mess(age)Q(ueue). Something quickly thrown together. Would work later to get it more performance oriented, good to go with smaller projects.<br /><br /><span class="citation">@GitHub</span>:       <a href="https://github.com/abhishekkr/messQ">https://github.com/abhishekkr/messQ</a><br /><span class="citation">@RubyGems</span>: <a href="https://rubygems.org/gems/messQ">https://rubygems.org/gems/messQ</a><br />_________________________<br /><br /><span style="font-size: large;">A Quick Tryout</span><br /><br /><b>[+] Install</b><br /><b><span class="math inline">$&lt;/b&gt; gem install messQ --no-ri --no-rdoc&lt;br /&gt;&lt;b&gt;[+] Start Server (starts at 0.0.0.0 on port#5566)&lt;/b&gt;&lt;br /&gt;&lt;div&gt;&lt;b&gt;$</span></b> messQ --start
 </div>
 <div>
 <b>[+] Enqueue user-id &amp; home value to the Queue</b>
 </div>
 <div>
-<b><span class="math">$&lt;/b&gt;&amp;nbsp;messQ -enq $</span>USER
+<b>$</b> messQ -enq <span class="math inline"><em>U</em><em>S</em><em>E</em><em>R</em> &lt; /<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>b</em>&gt;</span></b> messQ --enqueue <span class="math inline"><em>H</em><em>O</em><em>M</em><em>E</em> &lt; /<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>b</em> &gt; [ + ]<em>D</em><em>e</em><em>q</em><em>u</em><em>e</em><em>u</em><em>e</em>2<em>v</em><em>a</em><em>l</em><em>u</em><em>e</em><em>s</em><em>f</em><em>r</em><em>o</em><em>m</em><em>Q</em><em>u</em><em>e</em><em>u</em><em>e</em> &lt; /<em>b</em> &gt; &lt;<em>b</em><em>r</em>/&gt; &lt; <em>d</em><em>i</em><em>v</em> &gt; &lt;<em>b</em>&gt;</span></b> messQ -deq
 </div>
 <div>
-<b><span class="math"> &lt; /<em>b</em> &gt; <em>m</em><em>e</em><em>s</em><em>s</em><em>Q</em> −  − <em>e</em><em>n</em><em>q</em><em>u</em><em>e</em><em>u</em><em>e</em></span>HOME
-</div>
-<b>[+] Dequeue 2 values from Queue</b><br />
-<div>
-<b><span class="math"> &lt; /<em>b</em> &gt; <em>m</em><em>e</em><em>s</em><em>s</em><em>Q</em> − <em>d</em><em>e</em><em>q</em> &lt; /<em>d</em><em>i</em><em>v</em> &gt;  &lt; <em>d</em><em>i</em><em>v</em> &gt;  &lt; <em>b</em> &gt; </span></b> messq --dequeue
+<b><span class="math inline">&lt;/<em>b</em> &gt; <em>m</em><em>e</em><em>s</em><em>s</em><em>q</em> − −<em>d</em><em>e</em><em>q</em><em>u</em><em>e</em><em>u</em><em>e</em> &lt; /<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>b</em> &gt; [ + ]<em>S</em><em>t</em><em>o</em><em>p</em><em>S</em><em>e</em><em>r</em><em>v</em><em>e</em><em>r</em> &lt; /<em>b</em> &gt; &lt;/<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>d</em><em>i</em><em>v</em> &gt; &lt;<em>b</em>&gt;</span></b> messQ --stop
 </div>
 <div>
-<div>
-<b>[+] Stop Server</b>
-</div>
-<div>
-<b><span class="math">$&lt;/b&gt; messQ --stop&lt;/div&gt;&lt;div&gt;_________________________&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-size: large;&quot;&gt;Via Code&lt;/span&gt;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;[+]&amp;nbsp;Install&lt;/b&gt;&lt;br /&gt;&lt;b&gt;$</span></b> gem install messQ --no-ri --no-rdoc<br />or add following to your <b><i>Gemfile</i></b><br />gem 'messQ'<br /><b>require 'messQ'</b><br /><br /><b>[+] Start Server</b>
+_________________________<br /><br /><span style="font-size: large;">Via Code</span><br /><b><br /></b><b>[+] Install</b><br /><b>$</b> gem install messQ --no-ri --no-rdoc<br />or add following to your <b><i>Gemfile</i></b><br />gem 'messQ'<br /><b>require 'messQ'</b><br /><br /><b>[+] Start Server</b>
 </div>
 <div>
 MessQ.host = '127.0.0.1' # default is 0.0.0.0
@@ -71,6 +63,3 @@ MessQ::Server.stop
 </div>
 </div>
 </div>
-
-
-

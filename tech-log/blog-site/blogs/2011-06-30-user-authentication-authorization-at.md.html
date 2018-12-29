@@ -2,11 +2,14 @@
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div>
 <b>AppEngine</b>, a <b>PaaS</b> provided with a '<b>limited free</b>' version to all GMail users (<i>Google Account Owners</i>). So, you can host your WebContent their making use of Python, Java or Go.<br /><br />AppEngine enables you to use existing Google A/c of your Web-App users to be used for their authentication &amp; authorization at your AppEngine-hosted Web-App also.<br /><br />So, there are two main ways to acieve that:<br />
-<ol style="text-align: left;"><li>
+<ol style="text-align: left;">
+<li>
 to import google.appengine.api.<a href="http://code.google.com/appengine/docs/python/users/"><b>users</b></a> <br />this <a href="http://code.google.com/appengine/docs/python/users/">USERS module</a> from AppEngine APIs enables your Web-App to identify the users on the basis of their Google A/c ID (GMail ID) and then make the decision of routing the user to secured Resource or forbidden resource error message. <br />[ <a href="http://code.google.com/appengine/docs/python/users/loginurls.html">An Example on Usage</a> ]<br />
-</li><li>
+</li>
+<li>
 to specify '<a href="http://code.google.com/appengine/docs/python/config/appconfig.html#Requiring_Login_or_Administrator_Status"><b>login</b></a>' under '<a href="http://code.google.com/appengine/docs/python/config/appconfig.html"><b>app.yaml</b></a>'<br />so the major basic configuration about your Web-App and routing configuration reside in 'app.yaml' file which has default location of Web-App root location.<br />So, you can specify at secured '<b>url</b>' specifications to enforce user for a Google A/c (GMail) login. <br />[ <a href="http://code.google.com/appengine/docs/python/config/appconfig.html#Requiring_Login_or_Administrator_Status">An Example Of Usage</a> ]
-</li></ol>
+</li>
+</ol>
 </div>
 In, both of these implementations whenever a user tries to visit a 'secured url' on your Web-App, they are automatically redirected to Google A/c Log-In page further redirecting them back to your Web-App on succesful log-in.<br />
 <blockquote>
