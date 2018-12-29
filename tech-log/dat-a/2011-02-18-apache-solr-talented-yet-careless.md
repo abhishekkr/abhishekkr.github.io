@@ -5,8 +5,84 @@
 ```meta-tags: vulnerable Server csrf Security solr HTTP search apache```
 
 
+
 <div class="css-full-post-content js-full-post-content">
 
-<div dir="ltr" style="text-align: left;" trbidi="on"><b><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">SOLR</span></b>... what it is?<br />link:&nbsp;<a href="http://wiki.apache.org/solr/FAQ#What_is_Solr.3F">http://wiki.apache.org/solr/FAQ#What_is_Solr.3F</a><br />in short... <span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">it's an enterprise class search server</span><br /><br /><b><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">SOLR Security Consideration</span></b>... are clearly stated<br />link:&nbsp;<a href="http://wiki.apache.org/solr/SolrSecurity">http://wiki.apache.org/solr/SolrSecurity</a><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Solr does not concern itself with security either at the document level or the communication level.</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] It strongly recommends that the application server containing Solr be firewalled such that the only clients with access to Solr are your own</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Default installation of Solr allows any client with access to it to add, update, and delete documents (and of course search/read too), including access to the Solr configuration and schema files and the administrative user interface.</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Even if firewalled, it might be vulnerable to CSRF because Solr's basic behavior is to receive updates and deletes via HTTP...</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">So if you restricted Solr's /update handler to accept connections from approved hosts/clients... then also approved clients can be tricked to open another page with malicious script while they are authenticated at Solr.</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Basic technique to mitigate this risk is to configure Servlet Container to server speicifc IPs or with HTTP-Authentication.</span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Solr doesn't aim to for Document Level Security, recommended way is through Apache Lucene Connector Framework.</span><br /><div><br /><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;"><b>SOLR is a very capable search server, but if you need to use it... be sure to make it unreachable.</b></span></div></div>
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>
+<span class="Apple-style-span" style="font-family: Verdana, sans-serif;">SOLR
+</span>
+</b>... what it is?
+link:&nbsp;
+<a href="http://wiki.apache.org/solr/FAQ#What_is_Solr.3F">http://wiki.apache.org/solr/FAQ#What_is_Solr.3F
+</a>
+in short...
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">it's an enterprise class search server
+</span>
+
+
+<b>
+<span class="Apple-style-span" style="font-family: Verdana, sans-serif;">SOLR Security Consideration
+</span>
+</b>... are clearly stated
+link:&nbsp;
+<a href="http://wiki.apache.org/solr/SolrSecurity">http://wiki.apache.org/solr/SolrSecurity
+</a>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Solr does not concern itself with security either at the document level or the communication level.
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] It strongly recommends that the application server containing Solr be firewalled such that the only clients with access to Solr are your own
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Default installation of Solr allows any client with access to it to add, update, and delete documents (and of course search/read too), including access to the Solr configuration and schema files and the administrative user interface.
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Even if firewalled, it might be vulnerable to CSRF because Solr's basic behavior is to receive updates and deletes via HTTP...
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">So if you restricted Solr's /update handler to accept connections from approved hosts/clients... then also approved clients can be tricked to open another page with malicious script while they are authenticated at Solr.
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Basic technique to mitigate this risk is to configure Servlet Container to server speicifc IPs or with HTTP-Authentication.
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">
+
+</span>
+
+<span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">[] Solr doesn't aim to for Document Level Security, recommended way is through Apache Lucene Connector Framework.
+</span>
+
+<div>
+
+<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">
+<b>SOLR is a very capable search server, but if you need to use it... be sure to make it unreachable.
+</b>
+</span>
+</div>
+</div>
+
 
 </div>

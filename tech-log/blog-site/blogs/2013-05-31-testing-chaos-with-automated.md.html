@@ -1,123 +1,35 @@
-<div class="css-full-post-content js-full-post-content">
-<div dir="ltr" style="text-align: left;" trbidi="on">
-<br />
-<div style="text-align: left;">
-<span style="font-family: inherit;">No noise making.</span>
-</div>
-<div style="text-align: left;">
-<span style="font-family: inherit;"><br />But let's be real, think of the count of community contributed (or mysterious closed-and-sold 3rd Party) services, frameworks, library and modules put to use for managing your ultra-cool self-healing self-reliant scalable Infrastructure requirements. Now with so many cogs collaborating in the infra-machine, a check on their collaboration seems rather mandatory like any other integration test for your in-house managed service. </span><span style="font-family: inherit;">After all that was key idea behind having automated configuration management itself.</span>
-</div>
-<div style="text-align: left;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="text-align: left;">
-<span style="font-family: inherit;">Now the utilities like Puppet/Chef have been out there accepted and used by dev &amp; ops folks for quite some time now.</span>
-</div>
-<div style="text-align: left;">
-<span style="font-family: inherit;">But the issue with the initially seen amateur testing styles is it evolved from the non-matching frame of 'Product' oriented unit/integration/performance testing. 'Product' oriented testing focus more on what happens inside the coded logic and less on how user gets affected by product.<br />Most of the initial tools released for testing logic developed in Chef/Puppet were RSpec/Cucumber inspired Product testing pieces. Now for the major part of installing a package, restarting a service or pushing artifacts these tests are almost non-required as the main functionality for per-say installing package_abc is already tested inside the framework being used.<br />So coding to &quot;ask&quot; to install package_abc and testing if it has been asked seems futile.<br /><span style="color: #222222;"><br /></span></span>
-</div>
-<div style="text-align: left;">
-<span style="font-family: inherit;"><span style="color: #222222;">That's the shift. The logic developed for Infrastructure acts as a </span><span style="color: #222222;">glue to all other applications created in house and 3rd party. </span><span style="color: #222222;">Here in Infrastructure feature development there is more to test for the effect it has on the it's users (software/hardware) and less on internal changes (dependencies and dynamic content). Now the stuff in parentheses here means a lot more than seems... let's get into detail of it.</span></span>
-</div>
-<div style="background-color: white; text-align: left;">
-<br />
-</div>
-<h3 style="text-align: left;">
-<i>Real usability of Testing is based on keeping sanctity of WHAT needs to be tested WHERE.</i>
-</h3>
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif;">
-<br />
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;">Software/Hardware services that collaborate with the help of Automated Infrastructure logic needs major focus of testing. These services can be varying from the</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<ul style="text-align: left;">
-<li>
-<span style="font-family: inherit;">in-house 'Product', that is the central component you are developing</span>
-</li>
-<li>
-<span style="font-family: inherit;">3rd Party services it collaborates with,</span>
-</li>
-<li>
-<span style="font-family: inherit;">external services it utilizes for what it doesn't host,</span>
-</li>
-<li>
-<span style="font-family: inherit;">operating system that it supports and Ops-knows what not.</span>
-</li>
-</ul>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;">Internal changes mainly revolve around</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<ul style="text-align: left;">
-<li>
-<span style="font-family: inherit;">Resources/Dependencies getting called in right order and grouped for specific state.</span>
-</li>
-<li>
-<span style="font-family: inherit;">It also relates to correct generation/purging of dynamic content, that content can itself range as</span>
-</li>
+<p>No noise making.</p>
+<p>But let's be real, think of the count of community contributed (or mysterious closed-and-sold 3rd Party) services, frameworks, library and modules put to use for managing your ultra-cool self-healing self-reliant scalable Infrastructure requirements. Now with so many cogs collaborating in the infra-machine, a check on their collaboration seems rather mandatory like any other integration test for your in-house managed service. </p>
+<p>After all that was key idea behind having automated configuration management itself.</p>
+<p>Now the utilities like Puppet/Chef have been out there accepted and used by dev &amp; ops folks for quite some time now.</p>
+<p>But the issue with the initially seen amateur testing styles is it evolved from the non-matching frame of 'Product' oriented unit/integration/performance testing. 'Product' oriented testing focus more on what happens inside the coded logic and less on how user gets affected by product. Most of the initial tools released for testing logic developed in Chef/Puppet were RSpec/Cucumber inspired Product testing pieces. Now for the major part of installing a package, restarting a service or pushing artifacts these tests are almost non-required as the main functionality for per-say installing package_abc is already tested inside the framework being used. So coding to &quot;ask&quot; to install package_abc and testing if it has been asked seems futile.</p>
+<p>That's the shift. The logic developed for Infrastructure acts as a </p>
+<p>glue to all other applications created in house and 3rd party. </p>
+<p>Here in Infrastructure feature development there is more to test for the effect it has on the it's users (software/hardware) and less on internal changes (dependencies and dynamic content). Now the stuff in parentheses here means a lot more than seems... let's get into detail of it.</p>
+<hr />
+<h4 id="real-usability-of-testing-is-based-on-keeping-sanctity-of-what-needs-to-be-tested-where.">Real usability of Testing is based on keeping sanctity of WHAT needs to be tested WHERE.</h4>
+<p>Software/Hardware services that collaborate with the help of Automated Infrastructure logic needs major focus of testing. These services can be varying from the</p>
 <ul>
-<li>
-<span style="font-family: inherit;">non-corrupt configuration files generated of a template</span>
-</li>
-<li>
-<span style="font-family: inherit;">format of sent configuration data from one Infra-component to another for reflected changes</span>
-</li>
-<li>
-<span style="font-family: inherit;">dynamically creating/destroying service instances in case of auto-scalable infrastructure</span>
-</li>
+<li><p>in-house 'Product', that is the central component you are developing</p></li>
+<li><p>3rd Party services it collaborates with,</p></li>
+<li><p>external services it utilizes for what it doesn't host,</p></li>
+<li><p>operating system that it supports and Ops-knows what not.</p></li>
 </ul>
+<p>Internal changes mainly revolve around</p>
+<ul>
+<li><p>Resources/Dependencies getting called in right order and grouped for specific state.</p></li>
+<li><p>It also relates to correct generation/purging of dynamic content, that content can itself range as</p></li>
+<li><p>non-corrupt configuration files generated of a template</p></li>
+<li><p>format of sent configuration data from one Infra-component to another for reflected changes</p></li>
+<li><p>dynamically creating/destroying service instances in case of auto-scalable infrastructure</p></li>
 </ul>
-</div>
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif;">
-<i><br /></i>
-</div>
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif;">
-<i><br /></i>
-</div>
-<h3 style="text-align: left;">
-<i>One can decide <b>HOW,</b> on ease and efficiency basis.</i>
-</h3>
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif;">
-<b><br /></b>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><b>Unit Tests</b> work for the major portion of 'Internal Changes' mentioned before using <a href="https://github.com/acrmp/chefspec" target="_blank">chefspec</a>, <a href="http://rubygems.org/gems/rspec-chef" target="_blank">rspec-chef</a>, <a href="http://rubygems.org/gems/rspec-puppet" target="_blank">rspec-puppet</a> like libraries are good enough. They can very well test the dependency order and grouping management as well as the different data effect on non-corrupt configuration generation from templates.</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><b>Integration Tests</b> in this perspective are a of a bit interesting and evolutionary nature. Here we have to ensure the &quot;glue&quot; functionality we talked about for Software/Hardware service is working properly. These will confirm that every type of required machine role/state can be achieved flawlessly, call them <i><b>'</b></i><i><b>State Generation Test'</b></i>. They also need to confirm the <i><b>'Reflected Changes Test'</b></i> across Infra-component as mentioned in Internal changes.</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;">Now utilities like <a href="https://github.com/opscode/test-kitchen" target="_blank">test-kitchen</a>/<a href="https://github.com/portertech/kitchen-docker" target="_blank">docker</a> in collaboration with <a href="http://www.vagrantup.com/" target="_blank">vagrant</a>, <a href="http://www.docker.io/gettingstarted/" target="_blank">docker</a>, etc. help placing them in your <a href="http://en.wikipedia.org/wiki/Continuous_integration" target="_blank">Continuous Integration</a> pipeline. This would even help in testing same service across multiple linux distros if that's the plan to support.</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;">Library '<a href="http://serverspec.org/" target="_blank">ServerSpec</a>' is also a little nifty piece to write quick final state check scripts.</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;">Then final set of Integration Testing is implemented in form of <i><b>Monitoring</b></i> on your all managed/affecting Infrastructure components. This is the final and ever-running Integration Test.</span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="background-color: white; color: #222222;">
-<span style="font-family: inherit;"><br /></span>
-</div>
-<div style="background-color: white;">
-<span style="font-family: inherit;"><b style="color: #222222;">Performance Tests</b><span style="color: #222222;">, yes even they are required for it. Tools like </span><a href="https://github.com/Netflix/SimianArmy" style="color: #222222;" target="_blank">ChaosMonkey</a><span style="color: #222222;"> enable you to enable your Infra to be self-healing and auto-scalable. Should be load-test noticing dynamic containers count and behavior if auto-scalability is a desired functionality too</span><span style="color: #222222;">.</span></span>
-</div>
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13px;">
-<br />
-</div>
-</div>
-</div>
+<hr />
+<h4 id="one-can-decide-how-on-ease-and-efficiency-basis.">One can decide <code>How?</code> on ease and efficiency basis.</h4>
+<p><em>Unit Tests</em>&gt; work for the major portion of 'Internal Changes' mentioned before using <a href="https://github.com/acrmp/chefspec">chefspec</a>, <a href="http://rubygems.org/gems/rspec-chef">rspec-chef</a>, <a href="http://rubygems.org/gems/rspec-puppet">rspec-puppet</a> like libraries are good enough. They can very well test the dependency order and grouping management as well as the different data effect on non-corrupt configuration generation from templates.</p>
+<p><em>Integration Tests</em> in this perspective are a of a bit interesting and evolutionary nature. Here we have to ensure the &quot;glue&quot; functionality we talked about for Software/Hardware service is working properly. These will confirm that every type of required machine role/state can be achieved flawlessly, call them <em>'State Generation Test'</em>.</p>
+<p>They also need to confirm the <em>'Reflected Changes Test'</em> across Infra-component as mentioned in Internal changes.</p>
+<p>Now utilities like <a href="https://github.com/opscode/test-kitchen">test-kitchen</a>, <a href="https://github.com/portertech/kitchen-docker">kitchen-docker</a> in collaboration with <a href="http://www.vagrantup.com/">vagrant</a>, <a href="http://www.docker.io/gettingstarted/">docker</a>, etc. help placing them in your <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a> pipeline. This would even help in testing same service across multiple linux distros if that's the plan to support.</p>
+<p>Library 'ServerSpec' is also a little nifty piece to write quick final state check scripts.</p>
+<p>Then final set of Integration Testing is implemented in form of <em>Monitoring</em> on your all managed/affecting Infrastructure components. This is the final and ever-running Integration Test.</p>
+<p><em>Performance Tests</em>, yes even they are required for it. Tools like <a href="https://github.com/Netflix/SimianArmy">ChaosMonkey</a> enable you to enable your Infra to be self-healing and auto-scalable. Should be load-test noticing dynamic containers count and behavior if auto-scalability is a desired functionality too.</p>
+<hr />
