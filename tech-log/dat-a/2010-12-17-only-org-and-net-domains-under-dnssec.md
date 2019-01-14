@@ -5,66 +5,29 @@
 ```meta-tags: domain Server dns Security dnssec internet hacking```
 
 
+## only '.org' and '.net' domains under DNSSEC protection till now, `What About You`
 
-<div class="css-full-post-content js-full-post-content">
+> was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2010/12/only-org-and-net-domains-under-dnssec.html)
 
 Are you protected with DNSSEC:
-[] in mid-2010, DNSSEC got deployed over 'root-DNS-server' and '.org' domain
-[] on 10-Dec-2010, Verisign deployed DNSSEC in '.net' zone too
 
-<i>&nbsp;&nbsp; {securing more than 13million registrations online}
-</i>
-[] preparations are up to sign the '.com' zone in first quarter of 2011
+* in mid-2010, DNSSEC got deployed over 'root-DNS-server' and '.org' domain
 
-<div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">
+* on 10-Dec-2010, Verisign deployed DNSSEC in '.net' zone too; `securing more than 13million registrations online`
 
-</div>
-<div style="background-color: #fff2cc; color: #134f5c; font-family: Georgia,&quot;Times New Roman&quot;,serif;">
-<span style="font-size: small;">Verisign has even launched a cloud based DNSSEC implementation service to ease its implementation in organisations.
-</span>
-</div>
-<b style="background-color: #fff2cc; color: #134f5c;">
-<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif; font-size: x-small;">Refer to
-<a href="http://www.securityweek.com/verisign-launches-new-dnssec-signing-service">http://www.securityweek.com/verisign-launches-new-dnssec-signing-service
-</a>
-</span>
-</b>
+* preparations are up to sign the '.com' zone in first quarter of 2011
+
+> Verisign has even launched a cloud based DNSSEC implementation service to ease its implementation in organisations.
+> Refer to: [http://www.securityweek.com/verisign-launches-new-dnssec-signing-service](http://www.securityweek.com/verisign-launches-new-dnssec-signing-service)
+
 For those who are not much familiar with DNSSEC, its a security layer standardized to be implemented over traditional DNS services... it will help the users counter DNS vulnerabilities exposed by researchers like 'Dan Kaminsky' including DNS poisoning attacks.
 
-<b>Refer to
-<a href="http://www.dnssec.net/">http://www.dnssec.net
-</a>
-</b>
+Refer to [http://www.dnssec.net](http://www.dnssec.net)
 
 Its implementation would require more processing power, bandwidth usage and more storage needs as it uses intensive encryption mechanism over all DNS traffic.
 
-Though, I was surprised hearing initially of its implementation over root DNS server as its alterantive DNSCURVE (suggested by Dan Kaminsky) was conceptually better in security and easy on resources too. Don't know it was fair selection or just another political/community-biased decision.
+Though, I was surprised hearing initially of its implementation over root DNS server as its alterantive DNSCURVE was conceptually better in security and easy on resources too. Don't know it was fair selection or just another political/community-biased decision.
 
+> PS: Waited about a week to have time doing this post in detail, but more delay would deny its usability... so here it is.
 
-<div style="background-color: #0b5394; color: #cfe2f3; font-family: Georgia,&quot;Times New Roman&quot;,serif;">
-<i>
-<span style="font-size: x-small;">=begin :footer
-</span>
-</i>
-</div>
-<div style="background-color: #0b5394; color: #cfe2f3; font-family: Georgia,&quot;Times New Roman&quot;,serif;">
-<i>
-<span style="font-size: x-small;">#
-</span>
-</i>
-<span style="font-size: x-small;"> waited about a week to have time doing this post in detail...&nbsp;
-</span>
-</div>
-<div style="background-color: #0b5394; color: #cfe2f3; font-family: Georgia,&quot;Times New Roman&quot;,serif;">
-<span style="font-size: x-small;"># but more delay would deny its usability... so its here
-</span>
-</div>
-<div style="background-color: #0b5394; color: #cfe2f3;">
-<i>
-<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif; font-size: x-small;">=end :footer&nbsp;&nbsp;
-</span>
-</i>
-</div>
-
-
-</div>
+---

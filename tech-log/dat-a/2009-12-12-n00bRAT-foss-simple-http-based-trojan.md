@@ -7,6 +7,8 @@
 
 ## n00bRAT -[Linux Remote Admin Tool]-
 
+> was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2009/12/i-am-working-on-open-source.html)
+
 > **Use as a trojan to test if simplest attempt also gets catched by your IDS/Firewall**.
 >
 > I am working on an open-source undetectable TuX.RAT project, currently in its Beta stage, released at Sourceforge at following link.

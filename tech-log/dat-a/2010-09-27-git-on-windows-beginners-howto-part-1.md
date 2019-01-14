@@ -5,117 +5,28 @@
 ```meta-tags: video part1 CVS howto SCM windows guide project git code tutorial beginners repository opensource msysgit```
 
 
+## Git on Windows `Beginners HowTo` - Part 1
 
-<div class="css-full-post-content js-full-post-content">
+> was originally posted at deprecated blog [http://justfewtuts.blogspot.com](http://justfewtuts.blogspot.com/2010/09/git-on-windows-beginners-howto-part-1.html)
 
+This is **Part#1 'HowTo'** beginners guide for using **Git**, one of the best open-source **SCM** (Source Code Management) technology devised by **Linus Torvalds** to manage Linux's source code contribution from the phenomenal linux community.
 
-<div>This is
-<b>Part#1
-</b> '
-<b>
-<i>HowTo
-</i>
-</b>' beginners guide for using
-<b>
-<span class="Apple-style-span" style="font-size: x-large;">Git
-</span>
-</b>, one of the best open-source&nbsp;
-<b>SCM
-</b> (Source Code Management) technology devised
-<b>
-<i>by Linus Torvalds
-</i>
-</b> to manage Linux's source code contribution from the phenomenal linux community.
-location for
-<span class="Apple-style-span" style="font-size: x-large;"> '
-</span>
-<b>
-<span class="Apple-style-span" style="font-size: x-large;">msysgit
-</span>
-</b>
-<span class="Apple-style-span" style="font-size: x-large;">':&nbsp;
-</span>
-<a href="http://code.google.com/p/msysgit/">
-<span class="Apple-style-span" style="font-size: x-large;">http://code.google.com/p/msysgit
-</span>/
-</a>
+Location for **'msysgit'**: [http://code.google.com/p/msysgit/](http://code.google.com/p/msysgit/)
 
+Topics covered in this video tutorial:
 
-<i>Topics covered in this video tutorial:
-</i>
+* downloading **'msysgit'**, windows Git implementation for Git
 
+* installing **'msysgit'** properly to **have a GUI option** in context menu of directories
 
-<ol>
-<li>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">downloading '
-<b>msysgit
-</b>', windows Git implementation for Git
-</span>
-</li>
-<li>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">installing '
-<b>msysgit
-</b>' properly to
-<b>
-<i>have a GUI option
-</i>
-</b> in context menu of directories
-</span>
-</li>
-<li>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">
-<b>
-<i>using GUI
-</i>
-</b>:
-<b>creating a new Project with Git
-</b> Repository
-</span>
-</li>
-<li>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">
-<b>
-<i>using GUI
-</i>
-</b>:&nbsp;making
-<b>changes to repository and committing
-</b> them
-</span>
-</li>
-<li>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">
-<b>
-<i>using GUI
-</i>
-</b>:&nbsp;
-<b>cloning a local and a remote repo
-</b>sitory
-</span>
-</li>
-</ol>
-</div>
+* **using GUI**: creating a **new Project with Git** Repository
 
-<b>
-<i>@Youtube:&nbsp;
-<span class="Apple-style-span" style="font-weight: normal;">
-<span class="Apple-style-span" style="font-style: normal;">
-<a href="http://www.youtube.com/watch?v=Npd1UA4exCc">http://www.youtube.com/watch?v=Npd1UA4exCc
-</a>
-</span>
-</span>
-</i>
-</b>
+* **using GUI**: making **changes to repository and committing** them
 
+* **using GUI**: **cloning** a local and a remote repository
 
-<b>
-<i>@Vimeo:
-</i>
-</b>
+@Youtube: [http://www.youtube.com/watch?v=Npd1UA4exCc](http://www.youtube.com/watch?v=Npd1UA4exCc)
 
-<div style="text-align: center;">
-<iframe frameborder="0" height="347" src="http://player.vimeo.com/video/15283971" width="576">
-</iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Npd1UA4exCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-</div>
+---

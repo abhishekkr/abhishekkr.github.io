@@ -5,49 +5,45 @@
 ```meta-tags: server http SimpleHTTPServer howto file-sharing file python web```
 
 
+## is( `PYTHON installed` ){ Yes: `you have a simple HTTP server` }
 
-<div class="css-full-post-content js-full-post-content">
+> was originally posted at deprecated blog [http://justfewtuts.blogspot.com](http://justfewtuts.blogspot.com/2010/08/is-python-installed-yes-you-have-simple.html)
 
 
-<b>is Python installed, you already have Simple HTTP Server
-</b>
+**is Python installed, you already have Simple HTTP Server**
 
 if you need any simple plain web-server on your machine to server files (html or else)
 
-<b>and
-</b>
+**and**
+
 if you have PYTHON installed over your machine
 
-<b>then
-</b>
+**then**
+
 you don't need anything else
 
-<b>because
-</b>
+**because**
+
 you can run PYTHON itself in Simple HTTP Server mode to serve files from any directory you need
 
-<b>by
-</b>
-following below steps
-Step#1.
-[ opening shell/command-prompt ]
-Step#2.
-[ $&gt;cd (change dir) to directory you want to be root of your server ]
-Step#3.
-[ run this command without quotes
-<b>
-<span style="font-family: &quot;Courier New&quot;,Courier,monospace;">"python -m SimpleHTTPServer"
-</span>
-</b> ]
-Finally, [ Say abra-ca-dabra... ] Thanks...
+**by**
 
-<b>now
-</b>
+following below steps
+> * Step1. opening shell/command-prompt
+>
+> * Step2. cd (change dir) to directory you want to be root of your server
+>
+> * Step3. run this command without quotes `python -m SimpleHTTPServer`
+>
+> Finally, say abra-ca-dabra... thanks...
+
+**now**
+
 you have a Simple HTTP Server running, that can be accessed at Port 8000 of your Server's IP/Name
 
-<b>so
-</b>
-you can test it by browsing in any web browser at http://YOUR_SERVER_IP:8000/
 
+**so**
 
-</div>
+you can test it by browsing in any web browser at `http://YOUR_SERVER_IP:8000/`
+
+---
