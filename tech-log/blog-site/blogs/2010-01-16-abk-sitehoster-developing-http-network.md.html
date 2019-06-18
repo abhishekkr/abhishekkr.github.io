@@ -1,48 +1,19 @@
-<div class="css-full-post-content js-full-post-content">
-<p><span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; white-space: pre;"> <span style="font-family: &#39;Courier New&#39;, Courier, monospace;"> <span style="font-size: x-large;"> <b> <span style="color: #ffe599;">ABK SiteHoster </span> </b> </span> </span> </span> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-family: Arial; font-size: 13px; white-space: pre;"> <span style="color: #ffe599;">  </span> </span></p>
-<p><span style="color: #ffe599; font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; white-space: pre;"> <span style="font-size: x-large;"> <span style="color: #f9cb9c;">Sourceforge </span> </span> </span> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> Link : <a dir="ltr" href="http://sourceforge.net/projects/sitehoster/" rel="nofollow" target="_blank" title="http://sourceforge.net/projects/sitehoster/">http://sourceforge.net/projects/sitehoster/ </a>  </span> </span></p>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-<p><span style="font-family: Arial; font-size: small;"> <span class="Apple-style-span" style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"></p>
-<p></span> </span></p>
+<h2 id="abk-sitehoster-developing-a-http-network-server-to-be-secure-at-implementation">ABK SiteHoster, developing a HTTP Network Server to be secure at implementation</h2>
+<blockquote>
+<p>was originally posted at deprecated blog <a href="http://hackersmag.blogspot.com/2010/01/abk-sitehoster-developing-http-network.html">http://hackersmag.blogspot.com</a></p>
+<p><a href="https://github.com/abhishekkr/sitehoster">now at Github</a>; <a href="http://sourceforge.net/projects/sitehoster/">Sourceforge</a>; <a href="http://code.google.com/p/sitehoster/">Google Code</a></p>
+</blockquote>
+<p>Currently in it's BETA stage and can only serve URL as per HTTP v0.9, so not secure but basic WebServer</p>
+<p>Actually developing it as a HTTP Network Server to be secure at its implementation, normally all WebServer present out there are vulnerable cuz they didn't implemented Security at their very core but as an extra sheild outside.</p>
+<p>Here in this project I'll be aiming at making it secure from the core itself and making it self-secured by immunizing it from all kinds of Web-App attacks.</p>
+<p>ABK SiteHoster is aLEHNS (a Lightweight Extensible HTTP Network Server). Developed in pure Java. Currently supports HTTP 0.9, easily delivering normal HTML oriented WebSites. Aiming to be a full-fledged WebSite Server with all Web Services.</p>
+<h4 id="video-of-demo">Video of Demo</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ENiiAccY1v0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<h4 id="whitepaper-of-the-implementation-causing-xss-mitigation">Whitepaper of the implementation causing XSS mitigation</h4>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/g2HTuPNOQfP8Qf" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+</iframe>
+<div style="margin-bottom:5px">
+<strong> <a href="//www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss" title="XSS Defeating Trick ~=ABK=~ WhitePaper" target="_blank">XSS Defeating Trick <sub>=ABK=</sub> WhitePaper</a> </strong> from <strong><a href="https://www.slideshare.net/AbhishekKr" target="_blank">Abhishek Kumar</a></strong>
 </div>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-<p><span class="Apple-style-span" style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-family: Arial; font-size: 13px; white-space: pre;"> <span style="font-size: x-large;"> <span style="color: #f9cb9c;">Google Code </span> </span> Link : <a dir="ltr" href="http://code.google.com/p/sitehoster/" rel="nofollow" target="_blank" title="http://code.google.com/p/sitehoster/">http://code.google.com/p/sitehoster/ </a> </span></p>
-</div>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"></p>
-<p></span> </span></p>
-<p><span class="Apple-style-span" style="font-family: Arial;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; white-space: pre;"> <span style="font-size: x-large;"> <span style="color: #f9cb9c;">Youtube </span> </span> </span> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> <b>Demo </b> Link: <a href="http://www.youtube.com/watch?v=CogPa646vi8">http://www.youtube.com/watch?v=CogPa646vi8 </a> </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;">Currently in it's BETA stage and can only serve URL as per HTTP v0.9, so not secure but basic WebServer </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> </span> </span></p>
-<p><span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-family: Arial; font-size: 13px; white-space: pre;">Actually developing it as a HTTP Network Server to be secure at its implementation, normally all WebServer present out there are vulnerable cuz they didn't implemented Security at their very core but as an extra sheild outside. </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;">Here in this project I'll be aiming at making it secure from the core itself and making it self-secured by immunizing it from all kinds of Web-App attacks. </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"></p>
-<p></span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"> <span style="-webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-family: arial, helvetica, clean, sans-serif; line-height: 18px; white-space: normal;"> <span style="color: #d5a6bd;">ABK SiteHoster is aLEHNS (a Lightweight Extensible HTTP Network Server). Developed in pure Java. Currently supports HTTP 0.9, easily delivering normal HTML oriented WebSites. Aiming to be a full-fledged WebSite Server with all Web Services. </span> </span> </span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"></p>
-<object height="344" width="425">
-<param name="movie" value="http://www.youtube.com/v/CogPa646vi8&amp;hl=en_US&amp;fs=1&amp;"> </param> <param name="allowFullScreen" value="true"> </param> <param name="allowscriptaccess" value="always"> </param> <embed src="http://www.youtube.com/v/CogPa646vi8&amp;hl=en_US&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"> </embed>
-</object>
-<p></span> </span></p>
-<p><span style="font-family: Arial; font-size: small;"> <span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-size: 13px; white-space: pre;"></p>
-<p></span> </span></p>
-</div>
-<div class="css-full-comments-content js-full-comments-content">
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/06276198262605731980"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>Abhishek</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2010-03-22T16:52:34.093Z</code></pre>
-</div>
-</div>
-<div class="css-comment-content js-comment-content">
-<pre><code>version 1.0Beta with much improved HTTP v1.1 support has been released... also added to Softpedia.com</code></pre>
-</div>
-<p><br/></p>
-</div>
-</div>
+<hr />

@@ -4,6 +4,7 @@
 ```meta-comments: 0```
 ```meta-tags: development puppet virtualization kvm secops presentation devops Security log operations short talk devopsdays hacking```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

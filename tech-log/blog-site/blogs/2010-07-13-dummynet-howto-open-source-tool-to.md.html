@@ -1,118 +1,173 @@
-<div class="css-full-post-content js-full-post-content">
-<p>Any service allowing to  tweak Network Latency and Bandwidth as per desire for testing application  performance at different network latency scenarios.</p>
-<p><b>Tools/Technology Used: </b> DummyNet {Home}URL: <a href="http://info.iet.unipi.it/%7Eluigi/dummynet/">http://info.iet.unipi.it/~luigi/dummynet/ </a></p>
-<p><b>Background: </b> Normally the difference which comes in  development and  deployment environment of Web Applications, is of bandwidth and latency. To test the applications in actual scenario, one needs to tweak the latency as per deployment scene and then use it. There are few paid VE Technology based services like &quot;Shunra&quot; for this. But we required a free, open-source application, if possible for windows. DummyNet, it's an old Italian university project started for BSD systems, recently ported for Windows also. It helps in reducing latency of NIC to desired level.</p>
-<p><b>Execution Method: </b> [] Install NDIS Driver 1.  Open the configuration panel for the network card in use   {right click on the icon on the SYSTRAY, or go to 'Control Panel' &gt; 'Network' to select} 2.  Click on 'Properties' &gt; 'Install' &gt; 'Service' &gt; 'Add' 3.  Click on 'Driver Disk' and select 'netipfw.inf' in the folder it has been extracted to. 4.  Select 'ipfw+dummynet' which should be the only service visible. 5.  Click 'Accept' on the warnings for the installation of an unknown driver.</p>
-<p>Create a BAT-File for your Application to be run under test bandwidth &amp; latency with following content --------------------------------------File Content Starts  from Next line</p>
-<blockquote style="font-family: &quot;Courier New&quot;,Courier,monospace;">
-<p><span class="citation">@echo</span> off <span class="citation">@set</span> CYGWIN=nodosfilewarning <span class="citation">@ipfw</span> -q flush <span class="citation">@ipfw</span> -q pipe flush <span class="citation">@echo</span> ################# <span class="citation">@echo</span> ## Setting up ## <span class="citation">@echo</span> ################# ipfw pipe 3 config delay 1000ms bw 500Kbit/s mask all ipfw add pipe 3 ip from any to any ipfw pipe show</p>
-<p><span class="citation">@echo</span> &quot;&quot; <span class="citation">@echo</span> &quot;Network Tweaking Done, Start Testing.&quot; <span class="citation">@echo</span> &quot;&quot; <span class="citation">@echo</span> &quot;Press Enter when testing is done, to restore original Network Settings.&quot; pause</p>
-<span class="citation">@echo</span> ################# <span class="citation">@echo</span> ## Cleaning up ## <span class="citation">@echo</span> ################# ipfw -q flush ipfw -q pipe flush pause
+<h2 id="dummynet---howto-an-open-source-tool-to-tweak-network-latency-and-bandwidth">DummyNet - HowTo; an open-source tool to tweak network latency and bandwidth</h2>
+<blockquote>
+<p>was originally posted at deprecated blog <a href="http://justfewtuts.blogspot.com/2010/07/dummynet-howto-open-source-tool-to.html">http://justfewtuts.blogspot.com</a></p>
 </blockquote>
-<p>--------------------------------------File Content Ends at Previous line Here, 1000ms is latency set and can be changed to desired value 500 Kbps is bandwidth set and can be changed to desired value 'delay x' and 'bw x'; both can be used separately also as per need either place a command running your application to be tested in place of 'your_command_running_your_app'; or simple remove that line  and when the command gets paused at the first pause, run your appl ication manually.  </p>
-<p><b>Installation: </b> Follow the wlak-through video on Youtube at :</p>
-<p><a href="http://www.youtube.com/watch?v=jP-DrxTMXDc">http://www.youtube.com/watch?v=jP-DrxTMXDc </a></p>
-<p>Then, to test if it gets installed properly as a network services. It has a testme.bat file showing different tests, just run it and check statistics.</p>
-<p>I tested it on Windows XP, Vista, 7... and it worked great.</p>
+<p>Any service allowing to  tweak Network Latency and Bandwidth as per desire for testing application  performance at different network latency scenarios.</p>
+<h4 id="toolstechnology-used">Tools/Technology Used:</h4>
+<ul>
+<li>DummyNet <a href="http://info.iet.unipi.it/~luigi/dummynet/">{Home}URL</a></li>
+</ul>
+<h4 id="background">Background:</h4>
+<p>Normally the difference which comes in  development and  deployment environment of Web Applications, is of bandwidth and latency.</p>
+<p>To test the applications in actual scenario, one needs to tweak the latency as per deployment scene and then use it.</p>
+<p>There are few paid VE Technology based services like &quot;Shunra&quot; for this. But we required a free, open-source application, if possible for windows.</p>
+<p>DummyNet, it's an old Italian university project started for BSD systems, recently ported for Windows also. It helps in reducing latency of NIC to desired level.</p>
+<h4 id="execution-method">Execution Method:</h4>
+<ul>
+<li>Install NDIS Driver</li>
+</ul>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Open the configuration panel for the network card in use <code>right click on the icon on the SYSTRAY, or go to 'Control Panel' &gt; 'Network' to select</code></p></li>
+<li><p>Click on 'Properties' &gt; 'Install' &gt; 'Service' &gt; 'Add'</p></li>
+<li><p>Click on 'Driver Disk' and select 'netipfw.inf' in the folder it has been extracted to.</p></li>
+<li><p>Select 'ipfw+dummynet' which should be the only service visible.</p></li>
+<li><p>Click 'Accept' on the warnings for the installation of an unknown driver.</p></li>
+</ol>
+</blockquote>
+<ul>
+<li>Create a BAT-File for your Application to be run under test bandwidth and latency with following content</li>
+</ul>
+<pre><code>@echo off
+@set CYGWIN=nodosfilewarning
+@ipfw -q flush
+@ipfw -q pipe flush
+@echo #################
+@echo ## Setting up ##
+@echo #################
+ipfw pipe 3 config delay 1000ms bw 500Kbit/s mask all
+ipfw add pipe 3 ip from any to any
+ipfw pipe show
+
+@echo &quot;&quot;
+@echo &quot;Network Tweaking Done, Start Testing.&quot;
+@echo &quot;&quot;
+@echo &quot;Press Enter when testing is done, to restore original Network Settings.&quot;
+pause
+
+@echo #################
+@echo ## Cleaning up ##
+@echo #################
+ipfw -q flush
+ipfw -q pipe flush
+pause</code></pre>
+<p>In the script above,</p>
+<blockquote>
+<ul>
+<li><p>1000ms is latency set and can be changed to desired value, <code>delay x</code></p></li>
+<li><p>500 Kbps is bandwidth set and can be changed to desired value, <code>bw y</code></p></li>
+<li><p>both latency and bandwidth can be used separately also as per need</p></li>
+<li><p>either place a command running your application to be tested in place of <code>your_command_running_your_app</code>; or simple remove that line and when the command gets paused at the first pause, run your application manually.</p></li>
+</ul>
+</blockquote>
+<h4 id="installation">Installation:</h4>
+<ul>
+<li>Follow the wlak-through video on Youtube at :</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jP-DrxTMXDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li>Then, to test if it gets installed properly as a network services. It has a testme.bat file showing different tests, just run it and check statistics. I tested it on Windows XP, Vista, 7... and it worked great.</li>
+</ul>
+<hr />
+<h3 id="comments-from-blog-for-troubleshooting">Comments From Blog For Troubleshooting</h3>
+<div class="full-comment-panel">
+<div class="full-comment">
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;a href=&quot;http://www.blogger.com/profile/09733397847307378489&quot;&gt;freebiesutopia&lt;/a&gt;
+  &lt;span&gt;2012-01-11T10:35:38.085Z&lt;/span&gt;
+  &lt;div class=&quot;comment-text&quot;&gt;
+    I got the following error on windows 7 32 bit. ipfw pipe show my_socket failed 5, cannot talk to kernel module ipfw: socket&lt;br/&gt;
+    Kindly advise.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;comment-reply-panel&quot;&gt;
+  &lt;div class=&quot;comment-reply&quot;&gt;
+    &lt;a href=&quot;http://www.blogger.com/profile/06276198262605731980&quot;&gt;AbhishekKr a.k.a ~=ABK=~&lt;/a&gt;
+    &lt;span&gt;2012-02-22T18:59:25.215Z&lt;/span&gt;
+    &lt;div class=&quot;comment-reply-text&quot;&gt;
+      I&amp;#39;ll re-try it on my new updated 32-bit Win7 and be back with the solution ASAP, if its to do anything with the newer updates.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;comment-reply&quot;&gt;
+    &lt;a href=&quot;http://www.blogger.com/profile/15451017154478943176&quot;&gt;Andrija&lt;/a&gt;
+    &lt;span&gt;2012-05-14T19:27:53.792Z&lt;/span&gt;
+    &lt;div class=&quot;comment-reply-text&quot;&gt;
+      Just start your cmd.exe using &amp;quot;Run as administrator&amp;quot;. In my case that solved the error message.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;comment-reply&quot;&gt;
+    &lt;a href=&quot;https://www.blogger.com/profile/05515823858185345815&quot;&gt;dimitu3&lt;/a&gt;&lt;span&gt;November 7, 2013 at 3:52 AM&lt;/span&gt;
+    &lt;div class=&quot;comment-reply-text&quot;&gt;
+      Unfortunately, it doesnt work by me with &quot;Run as administrator&quot;. I still get the error: &quot;my_socket failed 2, cannot talk to kernel module&quot; I use Win 7 , x64 . If someone found a solution, I will be very thankful to share it here.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="css-full-comments-content js-full-comments-content">
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/09733397847307378489"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>freebiesutopia</code></pre>
+<div class="full-comment">
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;a href=&quot;http://www.blogger.com/profile/15315712237241122972&quot;&gt;shap&lt;/a&gt;
+  &lt;span&gt;2012-02-17T02:45:58.399Z&lt;/span&gt;
+  &lt;div class=&quot;comment-text&quot;&gt;
+    Did you try this on win 7-64 bit or 32 bit? My 64 bit windows doesn;t recognise a driver after the first step.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;comment-reply-panel&quot;&gt;
+  &lt;div class=&quot;comment-reply&quot;&gt;
+    &lt;a href=&quot;http://www.blogger.com/profile/06276198262605731980&quot;&gt;AbhishekKr a.k.a ~=ABK=~&lt;/a&gt;
+    &lt;span&gt;February 22, 2012 at 10:56 AM&lt;/span&gt;
+    &lt;div class=&quot;comment-reply-text&quot;&gt;
+      I don&#39;t have a 64-bit Win7 version, can&#39;t test it out on that, though I&#39;ll try it on my 32-bit Win7.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-01-11T10:35:38.085Z</code></pre>
+<div class="full-comment">
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;a href=&quot;http://www.blogger.com/profile/07038276901262027051&quot;&gt;Mikros Bozos&lt;/a&gt;
+  &lt;span&gt;2012-07-30T19:47:34.044Z&lt;/span&gt;
+  &lt;div class=&quot;comment-text&quot;&gt;
+    Hi there, thank you for the guide.&lt;br/&gt;
+    Question #1&lt;br/&gt;
+    I would like to ask you if there is a way to not open the pipes right away put when it have to send something.&lt;br/&gt;
+    &lt;br/&gt;
+    Question #2&lt;br/&gt;
+    Is it a great overhead to have say ... 200 pipes opened at the same time? Is there a mechanism in DummyNet to put in sleep those that are not in use?
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
+<div class="full-comment">
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;a href=&quot;https://www.blogger.com/profile/05518547699315433873&quot;&gt;Hiệu Lương Minh&lt;/a&gt;
+  &lt;span&gt;February 19, 2014 at 7:10 PM&lt;/span&gt;
+  &lt;div class=&quot;comment-text&quot;&gt;
+    Hi every one!&lt;br/&gt;
+    My computer installed it.However ,there is one mistake when I run bat file :&lt;br/&gt;
+    &quot;ipfw is not recognized as an internal or external command&quot;&lt;br/&gt;
+    give me some advises :)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;comment-reply-panel&quot;&gt;
+  &lt;div class=&quot;comment-reply&quot;&gt;
+    &lt;a href=&quot;&quot;https://www.blogger.com/profile/06281680392443406522&gt;PhoenixBR&lt;/a&gt;
+    &lt;span&gt;January 4, 2016 at 3:27 PM&lt;/span&gt;
+    &lt;div class=&quot;comment-reply-text&quot;&gt;
+      You have to put the path in the system enviroment:&lt;br/&gt;
+      &lt;br/&gt;
+      Press Window+PauseBreak or ControlPanel-&amp;gt;System and Maintainance-&amp;gt;System-&amp;gt;Advanced system settings-&amp;gt;enviroment variables-&amp;gt;system variables-&amp;gt;Path and put ;yourpath(where ipfw is), click ok and it&#39;s done! dpam.cin@gmail.com if you need help.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="css-comment-content js-comment-content">
-<pre><code>I got the following error on windows 7 32 bit. ipfw pipe show my_socket failed 5, cannot talk to kernel module ipfw: socket</code></pre>
-<p>Kindly advise.</p>
-</div>
-<p><br/></p>
-</div>
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/15315712237241122972"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>shap</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-02-17T02:45:58.399Z</code></pre>
-</div>
-</div>
-<div class="css-comment-content js-comment-content">
-<pre><code>Did you try this on win 7-64 bit or 32 bit? My 64 bit windows doesn;t recognise a driver after the first step</code></pre>
-</div>
-<p><br/></p>
-</div>
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/06276198262605731980"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>AbhishekKr a.k.a ~=ABK=~</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-02-22T18:56:21.696Z</code></pre>
-</div>
-</div>
-<div class="css-comment-content js-comment-content">
-<pre><code>I don&amp;#39;t have a 64-bit Win7 version, can&amp;#39;t test it out on that, though I&amp;#39;ll try it on my 32-bit Win7</code></pre>
-</div>
-<p><br/></p>
-</div>
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/06276198262605731980"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>AbhishekKr a.k.a ~=ABK=~</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-02-22T18:59:25.215Z</code></pre>
-</div>
-</div>
-<div class="css-comment-content js-comment-content">
-<pre><code>I&amp;#39;ll re-try it on my new updated 32-bit Win7 and be back with the solution ASAP, if its to do anything with the newer updates</code></pre>
-</div>
-<p><br/></p>
-</div>
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/15451017154478943176"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>Andrija</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-05-14T19:27:53.792Z</code></pre>
+<div class="full-comment">
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;a href=&quot;https://www.blogger.com/profile/07470006731926589206&quot;&gt;Shrestha&lt;/a&gt;
+  &lt;span&gt;November 1, 2018 at 6:01 AM&lt;/span&gt;
+  &lt;div class=&quot;comment-text&quot;&gt;
+    Hiii!&lt;br/&gt;
+    I want to use DummyNet in ubuntu 18.04. Kindly guide.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
-<div class="css-comment-content js-comment-content">
-<pre><code>Just start your cmd.exe using &amp;quot;Run as administrator&amp;quot;. In my case that solved the error message.</code></pre>
-</div>
-<p><br/></p>
-</div>
-<div class="css-full-comment js-full-comment">
-<div class="css-comment-user-link js-comment-user-link">
-<p><a href="http://www.blogger.com/profile/07038276901262027051"></p>
-<div class="css-comment-name js-comment-name">
-<pre><code>Mikros Bozos</code></pre>
-</div>
-<p></a></p>
-<div class="css-comment-date js-comment-date">
-<pre><code>2012-07-30T19:47:34.044Z</code></pre>
-</div>
-</div>
-<div class="css-comment-content js-comment-content">
-<pre><code>Hi there, thank you for the guide.</code></pre>
-<p>Question #1 I would like to ask you if there is a way to not open the pipes right away put when it have to send something.</p>
-<p>Question #2 Is it a great overhead to have say ... 200 pipes opened at the same time? Is there a mechanism in DummyNet to put in sleep those that are not in use?</p>
-</div>
-<p><br/></p>
-</div>
-</div>
+<hr />

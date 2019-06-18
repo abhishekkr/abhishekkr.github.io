@@ -1,26 +1,38 @@
-<div class="css-full-post-content js-full-post-content">
+<h2 id="abk-sitehoster-easily-setup-a-webserver-with-standalone-executable-jar">ABK SiteHoster, easily setup a webserver with standalone executable jar</h2>
+<blockquote>
+<p>was originally posted at deprecated blog <a href="http://justfewtuts.blogspot.com/2010/01/easily-set-up-webserver-with-standalone.html">http://justfewtuts.blogspot.com</a></p>
+</blockquote>
 <p>To set up a WebServer on your machine, a very easy way would be to use 'ABK SiteHoster', a project currently in its beta stage... just a standalone executable JAR... no complex configuration required...</p>
-<p>demo @ Youtube: http://www.youtube.com/watch?v=CogPa646vi8</p>
-<p>Using: [Step#1] Download JAR file from any of the two locations below</p>
-<p><span class="Apple-style-span" style="color: #cccccc; font-family: &#39;Trebuchet MS&#39;,Trebuchet,Verdana,sans-serif; font-size: 13px; line-height: 20px;"> <span style="font-family: Arial; font-size: small;"> <span style="white-space: pre;"> <span style="font-size: x-large;"> <span style="color: #f9cb9c;">Sourceforge </span> </span> </span> <span style="font-size: 13px; white-space: pre;"> Link : <a dir="ltr" href="http://sourceforge.net/projects/sitehoster/" rel="nofollow" style="color: #aa77aa; text-decoration: none;" target="_blank" title="http://sourceforge.net/projects/sitehoster/">http://sourceforge.net/projects/sitehoster/ </a>  </span> </span> </span></p>
-<div style="margin: 0px;">
-<p><span class="Apple-style-span" style="font-family: Arial; font-size: 13px; white-space: pre;"> <span style="font-size: x-large;"> <span style="color: #f9cb9c;">Google Code </span> </span> Link : <a dir="ltr" href="http://code.google.com/p/sitehoster/" rel="nofollow" style="color: #aa77aa; text-decoration: none;" target="_blank" title="http://code.google.com/p/sitehoster/">http://code.google.com/p/sitehoster/ </a> </span></p>
-</div>
-<p>say you downloaded a file named &quot;http09_v0.5beta.jar&quot;</p>
-<p>[Step#2] Copy your WebSite (currently no Server Side Scripting supported) to any folder, whose Absolute Path is say &quot;C:&quot;</p>
-<p>[Step#3] open command prompt, change directory to &quot;http09_v0.5beta.jar&quot;'s directory and execute following command</p>
-<p>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:&quot;</p>
-<p>if you want &quot;C:.html&quot; to be default file opened at Website root, then instead run following command</p>
-<p>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:&quot; index.html</p>
-<p>if Port 80 of your machine is already busy, and you want to run it at some other port say 1234, then run following command</p>
-<p>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:&quot; index.html 1234</p>
-<p>[NOTE] if you are on Linux/Unix not Windows follow the Note at end of this post</p>
-<p>PreRequirement: Instrall Java Virtual Machine on your Computer System.</p>
-<p>Syntax :</p>
-<p>[] Starting HTTP Server hosting web files in <c:\webdoc\> folder with &lt;index.htm&gt; as default file to open when root of IP accessed (it opens at Port 80 by default) &lt;/index.htm&gt; </c:\webdoc\> SYNTAX: &quot;java -jar http09_v0.5a.jar C: index.htm&quot;</p>
-<p>[] Starting HTTP Server hosting web files in <c:\webdoc\> folder with &lt;index.htm&gt; as default file to open when root of IP accessed; and 1234 is Port to be opened at (so access like http://IP:1234/index.htm) &lt;/index.htm&gt; </c:\webdoc\> SYNTAX:&quot;java -jar http09_v0.5a.jar C: index.htm 1234&quot;</p>
-<p>NOTE: to make it work in Linux, download Source Code, extract it and in /SRC/MACRO/appMACRO.java file change <platform ;="" win32="WIN32"> to   <platform ;="" posix="POSIX"> and recompile the app </platform> </platform></p>
-<object height="344" width="425">
-<param name="movie" value="http://www.youtube.com/v/CogPa646vi8&amp;hl=en_US&amp;fs=1&amp;"> </param> <param name="allowFullScreen" value="true"> </param> <param name="allowscriptaccess" value="always"> </param> <embed src="http://www.youtube.com/v/CogPa646vi8&amp;hl=en_US&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"> </embed>
-</object>
-</div>
+<p><a href="http://www.youtube.com/watch?v=CogPa646vi8">demo @ Youtube</a></p>
+<p>Using:</p>
+<h4 id="step.1">Step.1</h4>
+<ul>
+<li>Download JAR file from any of the two locations below, say you downloaded a file named <code>http09_v0.5beta.jar</code>.</li>
+</ul>
+<blockquote>
+<p><a href="https://github.com/abhishekkr/sitehoster">now at Github</a>; <a href="http://sourceforge.net/projects/sitehoster/">Sourceforge</a>; <a href="http://code.google.com/p/sitehoster/">Google Code</a></p>
+</blockquote>
+<h4 id="step.2">Step.2</h4>
+<ul>
+<li>Copy your WebSite (currently no Server Side Scripting supported) to any folder, whose Absolute Path is say <code>C:\temp\WebDocs</code> or <code>/opt/webdocs</code>.</li>
+</ul>
+<h4 id="step.3">Step.3</h4>
+<p><a href="https://github.com/abhishekkr/sitehoster/blob/master/Documentation/ReadMe_latest.txt">usage is deprecate below, latest available here</a></p>
+<ul>
+<li>Open command prompt, change directory to <code>http09_v0.5beta.jar</code>'s directory and execute following command.</li>
+</ul>
+<pre class="windows"><code>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:\temp\WebDocs&quot;</code></pre>
+<ul>
+<li>If you want <code>C:\temp\WebDocs\index.html</code> to be default file opened at Website root, then instead run following command</li>
+</ul>
+<pre><code>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:\temp\WebDocs&quot; index.html</code></pre>
+<ul>
+<li>If <code>Port 80</code> of your machine is already busy, and you want to run it at some other port (say <code>1234</code>), then run following command</li>
+</ul>
+<pre><code>cmd&gt; java -jar http09_v0.5beta.jar &quot;C:\temp\WebDocs&quot; index.html 1234</code></pre>
+<blockquote>
+<p>PreRequirement: need JVM obviously</p>
+</blockquote>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ENiiAccY1v0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<hr />

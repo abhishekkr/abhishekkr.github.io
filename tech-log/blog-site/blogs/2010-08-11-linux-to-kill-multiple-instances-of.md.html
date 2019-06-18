@@ -1,27 +1,26 @@
-<div class="css-full-post-content js-full-post-content">
-<p><i> <b>aw(Kill) all instances: </b> </i></p>
-<p>it has been happening in Linux where sometimes I need to start/restart/stop any Linux service but either it don't have a <i>(init.d,rc.d,*)/ </i>Service Script or simply failed even if it had then the usual thing I used to do is get Process ID of relevant App by using</p>
+<h2 id="linux-to-kill-multiple-instances-of-a-service-so-awkill-kill-awk-it">[LiNUX] to kill multiple instances of a service; so AWKill (kill + awk) it</h2>
 <blockquote>
-<b><code>ps aux | grep $StuckApp</code>  </b>
+<p>was originally posted at deprecated blog <a href="http://justfewtuts.blogspot.com/2010/01/easily-set-up-webserver-with-standalone.html">http://justfewtuts.blogspot.com</a></p>
 </blockquote>
+<h3 id="awkill-all-instances">aw(Kill) all instances:</h3>
+<p>It has been happening in Linux where sometimes I need to start/restart/stop any Linux service but either it don't have a <code>(init.d,rc.d,*)/</code>Service Script or simply failed even if it had then the usual thing I used to do is get Process ID of relevant App by using</p>
+<pre><code>ps aux | grep $StuckApp</code></pre>
 <p>and then kill it by</p>
-<blockquote>
-<b><code>kill -9 $PID</code> </b>
-</blockquote>
-<p>but few days back I ran a server (w/o any service script), generating 7-10 parallel instances of it now to kill it look + type all PIDs... now 'm not lazy but that real wastage of time so I automated it with help of AWK</p>
-<p><i> <b></p>
-<p></b> </i></p>
-<p><i> <b>so here is a command/script you can use to automate it in similar cases: </b> </i></p>
-<p><b> <i>shell command: </i> </b></p>
-<blockquote>
-<b style="font-family: Arial,Helvetica,sans-serif;">ps aux | grep $StuckAppNameHere | awk '{print $2; system(&quot;kill -9 &quot;$2&quot;&quot;);}'  </b>
-</blockquote>
-<p><i> <b>to use it as a shell script save following two lines in a script: </b> </i></p>
-<blockquote style="font-family: Arial,Helvetica,sans-serif;">
-<b>echo &quot;Killing all instances found matching for &quot;$1 ps aux | grep $1 | awk '{print $2; system(&quot;kill -9 &quot;$2&quot;&quot;);}' </b>
-</blockquote>
-<p>and pass the name of app to be matched and killed as parameter to it say you saved <i>script as awKillAll.sh </i>, and you have to kill all <i>processes matching with 'python' </i> then use</p>
-<blockquote>
-<b>#awKillAll.sh python </b>
-</blockquote>
-</div>
+<pre><code>kill -9 $PID</code></pre>
+<p>But few days back I ran a server (w/o any service script), generating 7-10 parallel instances of it.</p>
+<p>Now to kill it look + type all PIDs... now 'm not lazy but that real wastage of time.</p>
+<p>So I automated it with help of AWK.</p>
+<h4 id="so-here-is-a-commandscript-you-can-use-to-automate-it-in-similar-cases">So here is a command/script you can use to automate it in similar cases:</h4>
+<ul>
+<li>shell command:</li>
+</ul>
+<pre><code>ps aux | grep $StuckAppNameHere | awk &#39;{print $2; system(&quot;kill -9 &quot;$2&quot;&quot;);}&#39;;</code></pre>
+<ul>
+<li>to use it as a shell script save following two lines in a script:</li>
+</ul>
+<pre><code>echo &quot;Killing all instances found matching for &quot;$1
+ps aux | grep $1 | awk &#39;{print $2; system(&quot;kill -9 &quot;$2&quot;&quot;);}&#39;</code></pre>
+<p>And pass the name of app to be matched and killed as parameter to it, say you saved <code>script as 'awKillAll.sh'</code>, and you have to kill all <code>processes matching with 'python'</code>.</p>
+<p>Then use.</p>
+<pre><code>awKillAll.sh python</code></pre>
+<hr />

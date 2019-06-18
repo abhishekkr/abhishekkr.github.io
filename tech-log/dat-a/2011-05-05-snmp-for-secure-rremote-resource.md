@@ -4,6 +4,7 @@
 ```meta-comments: 0```
 ```meta-tags: SNMP Monitoring Remote Resource Configure```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

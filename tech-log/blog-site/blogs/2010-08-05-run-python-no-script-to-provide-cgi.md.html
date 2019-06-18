@@ -1,14 +1,22 @@
-<div class="css-full-post-content js-full-post-content">
-<p><span style="font-size: small;"> <b>want HTTP Server with CGI Support, just need PYTHON without any scripts </b> </span></p>
-<p>so to have CGI supported HTTP server, just by using PYTHON, you need to follow below steps</p>
-<p><b>Step#1.  </b> opening shell/command-prompt</p>
-<p><b>Step#2. </b> $&gt;cd (change dir) to directory you want to be root of your server</p>
-<p><b>Step#4. </b> create a directory name 'cgi-bin' or 'htbin', say &quot;mkdir cgi-bin&quot;</p>
-<p><b>Step#5. </b> copy all your CGI-scripts to this newly created 'cgi-bin' directory</p>
-<p><b>Step#6.  </b> now if anyhow you changed your directory, change it back to Parent Dir of created dir 'cgi-bin'</p>
-<p><b>Step#7.  </b> now run this command without quotes <b style="font-family: &quot;Courier New&quot;,Courier,monospace;">  </b></p>
-<p><span style="font-size: large;"> <b style="font-family: &quot;Courier New&quot;,Courier,monospace;">&quot;python -m CGIHTTPServer&quot; </b> </span></p>
-<p>Finally, [ Say yyippppeeeee... ] Thanks...</p>
-<p>now you have a CGI supported Simple HTTP Server running, that can be accessed at <i> <b>Port 8000 </b> </i> of your Server's IP/Name</p>
-<p>so you can test it by browsing in any web browser at <i> <b>http://YOUR_SERVER_IP:8000/ </b> </i> and like if you copied <i> <b>any script 'time' </b> </i> to cgi-bin then its accessible at <i> <b>http://YOUR_SERVER_IP:8000/cgi-bin/time </b> </i></p>
-</div>
+<h2 id="run-python-no-script-to-provide-a-cgi-supported-http-server">run PYTHON (no-script) to provide a CGI supported HTTP Server</h2>
+<blockquote>
+<p>was originally posted at deprecated blog <a href="http://justfewtuts.blogspot.com/2010/08/run-python-no-script-to-provide-cgi.html">http://justfewtuts.blogspot.com</a></p>
+</blockquote>
+<blockquote>
+<p>want HTTP Server with CGI Support, just need PYTHON without any scripts</p>
+</blockquote>
+<p>So to have CGI supported HTTP server, just by using PYTHON, you need to follow below steps</p>
+<ul>
+<li><p>Step1. opening shell/command-prompt</p></li>
+<li><p>Step2. cd (change dir) to directory you want to be root of your server</p></li>
+<li><p>Step3. create a directory name <code>cgi-bin</code> or <code>htbin</code>, say <code>mkdir cgi-bin</code></p></li>
+<li><p>Step4. copy all your CGI-scripts to this newly created <code>cgi-bin</code> directory</p></li>
+<li><p>Step6. now if anyhow you changed your directory, change it back to Parent Dir of created dir <code>cgi-bin</code></p></li>
+<li><p>Step7. now run this command without quotes <code>python -m CGIHTTPServer</code></p></li>
+</ul>
+<p>Finally, say yyippppeeeee... thanks...</p>
+<blockquote>
+<p>Now you have a CGI supported Simple HTTP Server running, that can be accessed at <code>Port 8000</code> of your Server's IP/Name.</p>
+<p>So you can test it by browsing in any web browser at <code>http://YOUR_SERVER_IP:8000/</code>. If you copied <strong>ny script <code>time</code></strong> to cgi-bin then its accessible at <code>http://YOUR_SERVER_IP:8000/cgi-bin/time</code>.</p>
+</blockquote>
+<hr />

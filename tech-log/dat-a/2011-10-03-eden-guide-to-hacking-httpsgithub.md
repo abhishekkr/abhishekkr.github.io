@@ -4,6 +4,7 @@
 ```meta-comments: 2```
 ```meta-tags: social engineering human factor Security Threat howto rconnaisance guide hacking recon```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

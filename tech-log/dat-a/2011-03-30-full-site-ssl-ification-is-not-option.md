@@ -4,84 +4,64 @@
 ```meta-comments: 0```
 ```meta-tags: Web SSL Security HTTP Free Internet sslstrip Sidejacking HTTPS ABK hacking```
 
+> was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/03/full-site-ssl-ification-is-not-option.html)
 
+## Full site SSL-ification is not an option, need to make SSL secure first
 
-<div class="css-full-post-content js-full-post-content">
+I have  heard (Recently and in past) security aware lives wasting a lot of their potential over the argument like
 
+* `Basic HTTP is insecure` {sometimes in novice past}
 
-<div dir="ltr" style="text-align: left;" trbidi="on">I have&nbsp; heard (Recently and in past) security aware lives wasting a lot of their potential over the argument like&nbsp;
-+ '
-<b>Basic HTTP is insecure
-</b>' {sometimes in novice past}
-+ '
-<b>SSL-ify entire web service
-</b>' {still a lot push is there}
+* `SSL-ify entire web service` {still a lot push is there}
 
-Now, '
-<b>Basic HTTP
-</b>' being insecure is not a flaw by design... but a flaw by choice.
+> Now, `Basic HTTP` being insecure is not a flaw by design... but a flaw by choice.
+
 First of all, when foundation of HTTP were laid attackers were not in the scene. The only concern was ultra productive usability and that is not possible putting all kind of security checks on the service.
+
 Secondly, HTTP wasn't meant to be secure, it was just meant to transfer data in adhering to a protocol which can be used by web-services to recieve user's requests and deliver requested content, that's all.
+
 Cryptography mixed into it will destroy the ease and speed it has. Cryptography over it is instead a necessary (in some cases) and correct (design) option.
-Though it has been haunting the websites by attacks like
-+[]
-<i>
-<b>SSL Stripping
-</b>
-</i>
 
-<blockquote>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/_p3XIipv981Y/S88RVdmcG1I/AAAAAAAAAEA/g3d5W2XJFFs/s1600/MITM.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
-<img border="0" height="150" src="http://3.bp.blogspot.com/_p3XIipv981Y/S88RVdmcG1I/AAAAAAAAAEA/g3d5W2XJFFs/s200/MITM.jpg" width="200" />
+### Though it has been haunting the websites by attacks like
 
-</a>
-</div>It's due to a flaw in the way Security is implemented in a web application. For example, you visit Facebook Login page at facebook.com which have a HTTPS link in its unprotected page-content to send over the credentials in a protected manner. But what if some attacker using Monkey-in-the-Middle strategy changed that HTTPS link to a HTTP link and sniff your sent credentials... w00t right.
-</blockquote>+[]
-<i>
-<b>Sidejacking
-</b>
-</i>
+* SSL Stripping
 
-<blockquote>It occurs due to web-application sending cookie information over non-ssl links. This allows any Man-in-the-Middle to sniff the cookie then replicate in his/her own browser and use the service identifying user just on basis of cookie information... it pwn3d services like GMail, Y!Mail, Hotmail, etc. until Q1-2010.
-</blockquote>
-Then, '
-<b>Full Site SSL-ification
-</b>' is a good choice from theoretical security point-of-view, but just in theory.
+![sslstrip](assets/2011-03-30-MITM.jpg)
+
+> It's due to a flaw in the way Security is implemented in a web application.
+>
+> For example, you visit Facebook Login page at facebook.com which have a HTTPS link in its unprotected page-content to send over the credentials in a protected manner.
+>
+> But what if some attacker using Monkey-in-the-Middle strategy changed that HTTPS link to a HTTP link and sniff your sent credentials... w00t right.
+
+* Sidejacking
+
+> It occurs due to web-application sending cookie information over non-ssl links.
+>
+> This allows any Man-in-the-Middle to sniff the cookie then replicate in his/her own browser and use the service identifying user just on basis of cookie information... it pwn3d services like GMail, Y!Mail, Hotmail, etc. until Q1-2010.
+
+
+### `Full Site SSL-ification`, a good choice from theoretical security point-of-view, but just in theory
+
 Different SSL-Defeating attacks involving
-+[]
-<i>
-<b>Flaws in Libraries like NSS
-</b>
-</i>
 
-<blockquote>There was a (earlier exploited, later) famous flaw in libraries with the case of NULL inclusion in URLs used for Domain name on which SSL Certificate is being issued. Mozilla Engine used NSS Cryptography libraries purely written in C and using basic insecure string functions for comparisons were tricked by certificates for domain name like &lt;&lt;www.paypal.com\0innocent.com&gt;&gt; stopping at first null after &lt;&lt;www.paypal.com&gt;&gt;. Webkit, Opera used null-stripping but they were tricked in just reversed attack using certificates for domain-name like &lt;&lt;www.pay\0pal.com&gt;&gt; stripping out usefull null.
-</blockquote>
-<a href="http://static.technorati.com/11/03/24/29977/comodo-hack.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
-<img border="0" height="168" src="http://static.technorati.com/11/03/24/29977/comodo-hack.jpg" width="200" />
+* Flaws in Libraries like NSS
 
-</a>+[]
-<i>
-<b>Fake SSL Certificate generation
-</b>
-</i>
+> There was a (earlier exploited, later) famous flaw in libraries with the case of NULL inclusion in URLs used for Domain name on which SSL Certificate is being issued.
+>
+> Mozilla Engine used NSS Cryptography libraries purely written in C and using basic insecure string functions for comparisons were tricked by certificates for domain name like `www.paypal.com\0innocent.com` stopping at first null after `www.paypal.com`.
+>
+> Webkit, Opera used null-stripping but they were tricked in just reversed attack using certificates for domain-name like `www.pay\0pal.com` stripping out usefull null.
 
-<blockquote>Not a flaw in SSL, neither in its implementation but in the authorities enforcing it.
-In a recent disclosure, Comodo Inc (a major issuer of SSL Certificate) accepted that an attacker was able to get credentials of 'Comodo Registration Authority' based in Southern Europe.
-An Iranian attacker used the privilege to issue 9 fraud SSL certificates to 7 web domains including those for Google, Yahoo and Skype.
-</blockquote>
+* Fake SSL Certificate generation
 
-<div style="background-color: #cccccc; color: purple; font-family: Verdana,sans-serif;">
-
-<span style="font-size: small;">&nbsp; So, if you will look deeper into serial-murder case file of
-&nbsp; SSL Certificates, you'll see it ain't safe...&nbsp;
-</span>
-
-<span style="background-color: #cccccc; color: purple; font-size: small;">&nbsp; and so there is no point in argument over its mixed/full
-&nbsp; implementation.
-</span>
-</div>
-</div>
+> Not a flaw in SSL, neither in its implementation but in the authorities enforcing it.
+>
+> In a recent disclosure, Comodo Inc (a major issuer of SSL Certificate) accepted that an attacker was able to get credentials of 'Comodo Registration Authority' based in Southern Europe.
+>
+> An Iranian attacker used the privilege to issue 9 fraud SSL certificates to 7 web domains including those for Google, Yahoo and Skype.
 
 
-</div>
+So, if you will look deeper into serial-murder case file of SSL Certificates, you'll see it ain't safe... and so there is no point in argument over its mixed/full implementation.
+
+---

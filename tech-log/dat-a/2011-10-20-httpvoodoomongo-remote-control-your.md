@@ -4,6 +4,7 @@
 ```meta-comments: 1```
 ```meta-tags: REST github mongo mongodb project http ruby API linux voodoo http_voodoo_mongo database opensource```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

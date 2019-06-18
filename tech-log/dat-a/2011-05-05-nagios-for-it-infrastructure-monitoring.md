@@ -4,6 +4,7 @@
 ```meta-comments: 0```
 ```meta-tags: howto TechXpress Monitoring Manual IT guide nagios Infrastructure```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

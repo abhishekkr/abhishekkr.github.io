@@ -4,6 +4,7 @@
 ```meta-comments: 0```
 ```meta-tags: P2PDNS P2P Government wikileaks SOPA Server dns censorship P2P-DNS ODDNS thepiratebay distributed hackers legal agencies Piratebay mafiaafire```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">

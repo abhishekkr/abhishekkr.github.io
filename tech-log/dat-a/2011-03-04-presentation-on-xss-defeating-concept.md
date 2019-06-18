@@ -4,100 +4,26 @@
 ```meta-comments: 0```
 ```meta-tags: Server Javascript conference Security research xss nullcon presentation hacking```
 
+> was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/03/presentation-on-xss-defeating-concept.html)
 
 
-<div class="css-full-post-content js-full-post-content">
+### Presentation on "XSS Defeating Concept in (secure)SiteHoster" : 'nullcon-2011'
+
+This is the work that I presented in `nullcon - 2011`, a security conference held in India by an emerging Security Community of India known as 'null'.
+
+It's mainly regarding preventing XSS Attacks with an entire new Concept based on 'Bug-As-A-Service'.
 
 
-<div dir="ltr" style="text-align: left;" trbidi="on">this is the work that I presented in 'nullcon - 2011' an security conference held at Goa by an emerging Security Community of India known as 'null'
-it's mainly regarding preventing XSS Attacks with an entire new Concept based on 'Bug-As-A-Service' and 'Attacking-The-Attacker'...
-any views/questions/comments/critics/confusions
-----------
+#### Presentation and WhitePaper
 
-<b>Presentation:
-</b>
+* [Presentation on "XSS Defeating Concept in (secure)SiteHoster"](http://www.slideshare.net/AbhishekKr/null-con2tiya)
 
-<div id="__ss_7147884" style="width: 595px;">
-<b style="display: block; margin: 12px 0pt 4px;">
-<a href="http://www.slideshare.net/AbhishekKr/null-con2tiya" title="Presentation on &quot;XSS Defeating Concept in (secure)SiteHoster&quot; : 'nullcon-2011'">Presentation on "XSS Defeating Concept in (secure)SiteHoster" : 'nullcon-2011'
-</a>
-</b>
-
-<object height="497" id="__sse7147884" width="595">
-<param name="movie" />
-
-<param name="allowFullScreen" value="true" />
-
-<param name="allowScriptAccess" value="always" />
-
-<embed width="430" height="340" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=nullcon2tiya-110304063235-phpapp02&amp;stripped_title=null-con2tiya&amp;userName=AbhishekKr" name="__sse7147884" type="application/x-shockwave-flash" allowfullscreen="true">
-</embed>
-</object>
-
-<div style="padding: 5px 0pt 12px;">View more
-<a href="http://www.slideshare.net/">presentations
-</a> from
-<a href="http://www.slideshare.net/AbhishekKr">Abhishek Kumar
-</a>
-</div>
-</div>----------
-
-<b>Concept-Part-1 WhitePaper:
-</b>
-
-<div id="__ss_5137259" style="width: 382px;">
-<b style="display: block; margin: 12px 0pt 4px;">
-<a href="http://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss" title="XSS Defeating Trick ~=ABK=~ WhitePaper">XSS Defeating Trick ~=ABK=~ WhitePaper
-</a>
-</b>
-
-<object height="408" id="__sse5137259" width="382">
-<param name="movie" />
-
-<param name="allowFullScreen" value="true" />
-
-<param name="allowScriptAccess" value="always" />
-
-<embed width="382" height="408" src="http://static.slidesharecdn.com/swf/doc_player.swf?doc=whitepaperabktricktosubvertxss-100906042821-phpapp02&amp;stripped_title=whitepaper-abktrick-to-subvert-xss&amp;userName=AbhishekKr" name="__sse5137259" type="application/x-shockwave-flash" allowfullscreen="true">
-</embed>
-</object>
-
-<div style="padding: 5px 0pt 12px;">View more
-<a href="http://www.slideshare.net/">documents
-</a> from
-<a href="http://www.slideshare.net/AbhishekKr">Abhishek Kumar
-</a>
-</div>
-</div>----------
-
-<b>Concept-Part-2 WhitePaper:
-</b>
-
-<div id="__ss_6822045" style="width: 382px;">
-<b style="display: block; margin: 12px 0pt 4px;">
-<a href="http://www.slideshare.net/AbhishekKr/xss-defeating-conceptpart2" title="XSS Defeating Concept - Part 2">XSS Defeating Concept - Part 2
-</a>
-</b>
-
-<object height="408" id="__sse6822045" width="382">
-<param name="movie" />
-
-<param name="allowFullScreen" value="true" />
-
-<param name="allowScriptAccess" value="always" />
-
-<embed width="382" height="408" src="http://static.slidesharecdn.com/swf/doc_player.swf?doc=xssdefeatingconcept-part2-110205085203-phpapp02&amp;stripped_title=xss-defeating-conceptpart2&amp;userName=AbhishekKr" name="__sse6822045" type="application/x-shockwave-flash" allowfullscreen="true">
-</embed>
-</object>
-
-<div style="padding: 5px 0pt 12px;">View more
-<a href="http://www.slideshare.net/">documents
-</a> from
-<a href="http://www.slideshare.net/AbhishekKr">Abhishek Kumar
-</a>
-</div>
-</div>----------
-</div>
+* Concept WhitePaper: [Part-1](https://www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss), [Part-2](https://www.slideshare.net/AbhishekKr/xss-defeating-conceptpart2)
 
 
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/g2HTuPNOQfP8Qf" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/AbhishekKr/whitepaper-abktrick-to-subvert-xss" title="XSS Defeating Trick ~=ABK=~ WhitePaper" target="_blank">XSS Defeating Trick ~=ABK=~ WhitePaper</a> </strong> from <strong><a href="https://www.slideshare.net/AbhishekKr" target="_blank">Abhishek Kumar</a></strong> </div>
+
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/xCv4IDRw8GVMcj" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/AbhishekKr/xss-defeating-conceptpart2" title="XSS Defeating Concept - Part 2" target="_blank">XSS Defeating Concept - Part 2</a> </strong> from <strong><a href="//www.slideshare.net/AbhishekKr" target="_blank">Abhishek Kumar</a></strong> </div>
+
+---

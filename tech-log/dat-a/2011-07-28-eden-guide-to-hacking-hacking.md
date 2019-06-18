@@ -4,6 +4,7 @@
 ```meta-comments: 0```
 ```meta-tags: art of hacking sun tzu eden philosophy guide google appengine cloud paas authorization authentication security rig veda hacking```
 
+> was originally posted at deprecated blog [http://.blogspot.com]()
 
 
 <div class="css-full-post-content js-full-post-content">
