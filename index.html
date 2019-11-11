@@ -1,60 +1,118 @@
-<!DOCTYPE html>
-<html ng-app="ngabk">
-	<head>
-		<meta charset="utf-8">
-  		<meta name="viewport" content="width=device-width">
-      <title>AbhishekKr</title>
-      <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-      <link rel="stylesheet" type="text/css" href="/assets/css/abk.css" />
-      <link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css' />
-      <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700italic' rel='stylesheet' type='text/css' />
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
-	</head>
-	<body>
-	<header>
-		<span id="psych">psych</span>o-<span id="technologist">TECHNOLOGIST</span>
-	</header><br/>
-	<div id="main" style="margin: 0 auto; text-align: center;">
-		<div id="mainpage">
-			<div id="home" class="content">
-		        <div id="me" class="widget">
-		          <div class="subheading">AbhishekKr</div>
-		          <span class="mailid dimlight"><a href="mailto:krabhishek@live.com">e-mail</a></span> | <span class="twitter dimlight">GitHub: <a href="https://github.com/abhishekkr">abhishekkr</a></span> | <span class="twitter dimlight">twitter: <a href="https://twitter.com/abionic">@abionic</a></span> | <span class="googelplus dimlight">G+: <a href="https://plus.google.com/101727951948779643819">abhikumar163</a></span> | <span class="linkedin dimlight">linkedin: <a href="http://in.linkedin.com/in/abionic">in/abionic</a></span>
-		        </div>
-		        <br/>
-		        <div class="subheading">Projects</div>
-		        <div id="projects" class="widget">
-		          <div>
-		          	<div class="item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/goshare">goshare</a></span> (golang): a TimeSeries/NameSpace/KeyVal DataStore (using leveldb) over HTTP &/or ZeroMQ<br/>
-		          	</div>
-		          	<div class="item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/raguel">raguel</a></span> (bash): It's here to be the friend of Bourne Shell Gods to create minion scripts to serve the SYSTEMS.<br/>
-		          	</div>
-		          	<div class="item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/n00bRAT">n00bRAT</a></span> (C Lang): a Remote Admin Toolkit (or Trojan) for POSiX (Linux) system working as HTTP Service<br/>
-		          	</div>
-		          	<div class="item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/rubygem_rss_motor">rss-motor</a></span> (rubygem): an RSS Motor for your application to get rolling on using RSS Feeds<br/>
-		          	</div>
-		          	<div class="item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/irc-qik-bot">irc-qik-bot</a></span> (rubygem): its a babbling IRC Bot very quick to setup and act ;) aiming to be intelligent<br/>
-		          	</div>
-		          	<div class="dimlight right italic"><a href="https://github.com/abhishekkr/">...all projects at github</a></div>
-		          </div>
-		        </div>
-		        <br/>
-		        <div class="subheading">Blogs</div>
-		        <div id="blogs" class="widget">
-		          <div>
-		          	<div>
-                  <span class="dimlight italic">BlogHub: <a href="http://abhishekkr.wordpress.com">http://abhishekkr.wordpress.com</a></span>
-                  <span class="dimlight italic"><a href="./slides/index.html">Slides</a></span>
-		          	</div>
-		          </div>
-		        </div>
-			</div>
-			<div id="haunted_online" class="panel">
-				|_ <a href="mailto:abhikumar163@gmail.com"><img src="/assets/img/icon_gmail.png" alt="gmail-id" title="gmail-id" /></a> _|_ <a href="https://github.com/abhishekkr" target="_blank"><img src="/assets/img/icon_github.png" alt="abhishekkr@github" title="abhishekkr@github" /></a> _|_ <a href="https://twitter.com/abionic" target="_blank"><img src="/assets/img/icon_twitter.png" alt="abionic@twitter" title="abionic@twitter"/></a> _|
-			</div>
-		</span>
-	</div>
-	<footer>|_ <a href="mailto:abhikumar163@gmail.com">(c)AbhishekKr</a> _|_ <a href="https://github.com/abhishekkr" target="_blank">@Github</a> _|_ <a href="https://twitter.com/abionic" target="_blank">@Twitter</a> _|_ <a href="http://abhishekkr.wordpress.com" target="_blank">@BlogHub</a> _|_ <a href="http://abhishekkr.deviantart.com" target="_blank">@DeviantArt</a> _|</footer>
-	</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUI Landing Page Example</title>
+    <link href="//cdn.muicss.com/mui-0.9.41/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.muicss.com/mui-0.9.41/extra/mui-colors.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
+
+    <link href="/css/simpleblog.css" rel="stylesheet" type="text/css" />
+    <style>
+     /* Tutorial CSS goes here */
+    </style>
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1 mui--bg-color-blue-grey-400">
+      <div class="mui-container">
+        <table>
+          <tr class="mui--appbar-height">
+            <td class="mui--text-left"><a href="/index.html"><img src="/img/icon-home.svg"/></a></td>
+            <td class="mui--text-title page-title">abhishekkr</td>
+            <td class="mui--text-right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a class="mui--color-teal-A100" href="code.html">code</a></li>
+                <li><a class="mui--color-teal-A100" href="uncode.html">not(code)</a></li>
+                <li><a class="mui--color-teal-A100" href="blog.html">blog</a></li>
+                <li><a class="mui--color-teal-A100" href="about.html">about</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+      <div class="mui--appbar-height"></div>
+      <br/>
+      <div class="mui-card card-wide xm-shadow">
+        <div class="card-content">
+          <div class="mui--text-right mui--text-dark-hint">fear and loathing on interweb!</div>
+          <div class="mui--text-left card-main-content">
+            <span class="mui--text-dark-secondary highlight">best way 'to have' is 'to create', even when not the best way... it's a learning</span>
+            <div class="summary mui--align-middle mui--text-justify">
+              <div class="make-your-music">
+              </div>
+              <div class="primary-projects">
+                  <div>
+                    <div class="pad5px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/goshare">goshare</a></span> (golang): a TimeSeries/NameSpace/KeyVal DataStore (using leveldb) over HTTP &/or ZeroMQ<br/>
+                    </div>
+                    <div class="pad5px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/raguel">raguel</a></span> (bash): It's here to be the friend of Bourne Shell Gods to create minion scripts to serve the SYSTEMS.<br/>
+                    </div>
+                    <div class="pad5px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/n00bRAT">n00bRAT</a></span> (C Lang): a Remote Admin Toolkit (or Trojan) for POSiX (Linux) system working as HTTP Service<br/>
+                    </div>
+                    <div class="pad5px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/rubygem_rss_motor">rss-motor</a></span> (rubygem): an RSS Motor for your application to get rolling on using RSS Feeds<br/>
+                    </div>
+                    <div class="pad5px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/irc-qik-bot">irc-qik-bot</a></span> (rubygem): its a babbling IRC Bot very quick to setup and act ;) aiming to be intelligent<br/>
+                    </div>
+                    <div class="pad5px dimlight right italic"><a href="https://github.com/abhishekkr/">...all projects at github</a></div>
+                  </div>
+                </div>
+              <div class="self-preview">
+              </div>
+              <div class="game-on">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="mui-container">
+        <div class="mui-row">
+          <div class="mui-col-md-4 card-preview xm-shadow">
+            <div class="card-content">
+              <div class="mui--text-right mui--text-dark-hint">code <span><a href="code.html"><img src="img/icon-next.svg" alt="next"/></a></span></div>
+              <div class="mui--text-left card-main-content">
+                <span class="mui--text-dark-secondary highlight">opensource projects, snippets and tutorials</span>
+                <div class="summary">
+                  <div class="pad2px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/weeproxy">weeproxy</a></span> (golang): a wee bit http reverse proxy with load-balancing, graceful stop, metrics, rate-limiting and circuit-breaking</div>
+                  <div class="pad2px item"><span class="dimlight bold"><a href="https://gist.github.com/abhishekkr/80abac819c55458a66e32a49f4e7d608">go-versions</a></span> (bash snippet): download and enable different go lang versions</div>
+                  <div class="pad2px item"><span class="dimlight bold"><a href="https://github.com/abhishekkr/tutorials_as_code/blob/master/talks-articles/README.md">tutorials</a></span> notes from talks and articles on programming languages, services, tools, more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mui-col-md-4 card-preview xm-shadow">
+            <div class="card-content">
+              <div class="mui--text-right mui--text-dark-hint">not(code) <span><a href="uncode.html"><img src="img/icon-next.svg" alt="next"/></a></span></div>
+              <div class="mui--text-left card-main-content">
+                <span class="mui--text-dark-secondary highlight">art, music and writings via primal and digital</span>
+                <div class="summary">
+                  $animated-pinned-entries
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mui-col-md-4 card-preview xm-shadow">
+            <div class="card-content">
+              <div class="mui--text-right mui--text-dark-hint">blog <span><a href="blog.html"><img src="img/icon-next.svg" alt="next"/></a></span></div>
+              <div class="mui--text-left card-main-content">
+                <span class="mui--text-dark-secondary highlight">on systems, development and security</span>
+                <div class="summary">
+                  <div class="pad2px item"><span class="dimlight bold"><a href="http://justfewtuts.blogspot.com/2014/10/what-qualifies-project-to-be-product.html">blog:</a></span> What qualifies the Project to be a Product?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mui--bg-color-blue-grey-200">
+      <div class="mui-container mui--text-center">
+        from <a href="https://twitter.com/abionic">@abionic</a> with ♥
+      </div>
+    </footer>
+  </body>
 </html>
