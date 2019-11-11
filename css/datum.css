@@ -32,9 +32,9 @@
 }
 .list > li {
   width: 100%;
-  display:inline-block;
+  display: inline-block;
   background-color: #eee;
-  padding:2px;
+  padding: 2px;
   box-shadow: inset 2px 2px 2px #fff;
 }
 
@@ -44,4 +44,17 @@
 
 .blogcontent {
   display: None;
+}
+
+/**
+ * Sidebar CSS
+ */
+#sidebar {
+  background-color: #008080;
+}
+#sidebar > button {
+  display: inline-block;
+}
+#sidebar > input {
+  width: 90%;
 }

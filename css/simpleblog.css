@@ -114,8 +114,7 @@ footer {
   font-stretch: condensed;
 }
 .summary {
-  font-family: fantasy;
-  font-stretch: condensed;
+  font-family: 'PT Sans Narrow', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -137,4 +136,23 @@ footer {
 }
 .page-title {
   color: #434343;
+}
+.about {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15em;
+  height: 100%;
+  width: 100%;
+}
+.about .rhyme {
+  color: #00695c;
+}
+
+.wip {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.15em;
+  color: #44695c;
+}
+
+audio {
+  width: 280px;
 }
