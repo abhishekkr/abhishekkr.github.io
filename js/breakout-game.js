@@ -283,5 +283,10 @@ function draw() {
   y += dy;
 }
 
-gameInit();
-var interval = setInterval(draw, 10);
+if (document.getElementById("code").getBoundingClientRect().top == document.getElementById("uncode").getBoundingClientRect().top) {
+  gameInit();
+  var interval = setInterval(draw, 10);
+
+} else {
+  document.getElementById("showCardParent").remove();
+}
