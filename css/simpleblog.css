@@ -1,0 +1,158 @@
+/**
+ * Body CSS
+ */
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Header CSS
+ */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header ul.mui-list--inline {
+  margin-bottom: 0;
+}
+
+header a {
+  color: #565656;
+}
+
+header table {
+  width: 100%;
+}
+
+
+/**
+ * Content CSS
+ */
+#content-wrapper {
+  min-height: 100%;
+
+  /* sticky footer */
+  box-sizing: border-box;
+  margin-bottom: -50px;
+  padding-bottom: 100px;
+}
+
+
+/**
+ * Footer CSS
+ */
+footer {
+  box-sizing: border-box;
+  min-height: 50px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+/**
+ * mui cards
+ */
+
+.mui-card {
+  background: #fff;
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.xm-shadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.xm-shadow:hover {
+  box-shadow: 0 14px 28px
+  rgba(0,0,0,0.25), 0 10px 10px
+  rgba(0,0,0,0.22);
+}
+
+.card-wide {
+  min-height: 340px;
+  min-width: 300px;
+  width: 75%;
+}
+.card-narrow {
+  min-height: 640px;
+  min-width: 200px;
+}
+.card-preview {
+  min-height: 340px;
+  min-width: 200px;
+}
+.card-content {
+  margin: 5px;
+}
+.card-main-content {
+  margin: 5px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 10px;
+}
+.highlight {
+  font-style: italic;
+  font-family: cursive;
+  font-stretch: condensed;
+}
+.summary {
+  font-family: 'PT Sans Narrow', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.pad5px {
+  padding-top: 5px;
+}
+.pad2px {
+  padding-top: 2px;
+}
+.pad1px {
+  padding-top: 1px;
+}
+
+/**
+ * abk
+ */
+.striketext {
+    text-decoration: line-through;
+}
+.page-title {
+  color: #434343;
+}
+.about {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15em;
+  height: 100%;
+  width: 100%;
+}
+.about .rhyme {
+  color: #00695c;
+}
+
+.wip {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.15em;
+  color: #44695c;
+}
+
+audio {
+  width: 280px;
+}
