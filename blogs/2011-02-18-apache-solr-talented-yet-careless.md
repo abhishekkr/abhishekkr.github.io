@@ -1,15 +1,12 @@
-```meta-title: Apache SOLR ~ a talented yet careless server```
-```meta-date: 2011-02-18 19:14:00```
-```meta-updated: 2011-02-18 19:14:20```
-```meta-comments: 0```
-```meta-tags: vulnerable Server csrf Security solr HTTP search apache```
 
 > was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/02/apache-solr-talented-yet-careless.html)
 
+## Apache Solr, a talented yet careless server
+
 *SOLR*... what it is?
 
-link: [http://wiki.apache.org/solr/FAQ#What_is_Solr.3F](http://wiki.apache.org/solr/FAQ#What_is_Solr.3F)
-
+> link: [http://wiki.apache.org/solr/FAQ#What_is_Solr.3F](http://wiki.apache.org/solr/FAQ#What_is_Solr.3F)
+>
 > in short... it's an enterprise class search server
 
 SOLR Security Consideration... are clearly stated at link: [http://wiki.apache.org/solr/SolrSecurity](http://wiki.apache.org/solr/SolrSecurity)

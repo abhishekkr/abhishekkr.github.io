@@ -1,8 +1,3 @@
-```meta-title: Indian Airport Internet ~ Hacking Policies Not Tweaking Systems```
-```meta-date: 2011-03-16 06:16:00```
-```meta-updated: 2011-03-16 06:16:17```
-```meta-comments: 2```
-```meta-tags: Policies India bypass Free Internet WiFi Failure Airport```
 
 > was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/03/indian-airport-internet-hacking.html)
 

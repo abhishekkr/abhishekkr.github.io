@@ -1,4 +1,4 @@
-## Weak Excuses after Weak Security :: Mozilla's user a/c on Public Server
+## Weak Excuses after Weak Security: Mozilla's user account on Public Server
 
 > was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2010/12/weak-excuses-after-weak-security.html)
 

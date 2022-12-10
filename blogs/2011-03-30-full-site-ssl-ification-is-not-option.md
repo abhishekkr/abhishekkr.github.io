@@ -1,8 +1,3 @@
-```meta-title: Full site SSL-ification is not an option, need to make SSL secure first```
-```meta-date: 2011-03-30 11:28:00```
-```meta-updated: 2011-03-30 11:40:03```
-```meta-comments: 0```
-```meta-tags: Web SSL Security HTTP Free Internet sslstrip Sidejacking HTTPS ABK hacking```
 
 > was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/03/full-site-ssl-ification-is-not-option.html)
 

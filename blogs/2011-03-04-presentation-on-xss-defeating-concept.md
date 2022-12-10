@@ -1,9 +1,3 @@
-```meta-title: Presentation on \"XSS Defeating Concept in (secure)SiteHoster\" : 'nullcon-2011'```
-```meta-date: 2011-03-04 15:23:00```
-```meta-updated: 2011-03-04 15:24:18```
-```meta-comments: 0```
-```meta-tags: Server Javascript conference Security research xss nullcon presentation hacking```
-
 > was originally posted at deprecated blog [http://hackersmag.blogspot.com](http://hackersmag.blogspot.com/2011/03/presentation-on-xss-defeating-concept.html)
 
 
