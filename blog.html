@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ABK</title>
-    <link href="//cdn.muicss.com/mui-0.9.41/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <link href="//cdn.muicss.com/mui-0.9.41/extra/mui-colors.min.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
 
-    <link href="/css/simpleblog.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.muicss.com/mui-0.9.41/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.muicss.com/mui-0.9.41/extra/mui-colors.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
     <style>
      /* Tutorial CSS goes here */
+      #blogcontent{
+        text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -21,7 +25,7 @@
         <table>
           <tr class="mui--appbar-height">
             <td class="mui--text-left"><a href="/index.html"><img src="/img/icon-home.svg"/></a></td>
-            <td class="mui--text-title page-title"><a href="/index.html">abhishekkr</a></td>
+            <td class="mui--text-title page-title">abhishekkr</td>
             <td class="mui--text-right">
               <ul class="mui-list--inline mui--text-body2">
                 <li><a class="mui--color-teal-A100" href="code.html">code</a></li>
@@ -40,21 +44,41 @@
       <div class="mui-card card-wide xm-shadow">
         <div class="mui-row">
           <div class="mui-col-sm-10 mui-col-sm-offset-1">
-            <br>
-            <br>
-            <div class="mui--text-dark-secondary mui--text-body2">PINNED POST</div>
+            <div class="wip">web.logs</div>
             <div class="mui-divider"></div>
             <br>
-            <!-- blog goes here --><div class="wip">the pen is out of ink, my mug got no swill<br/>moving older blogs here and new, soon I will</div>
+            <p>still migrating content, have only migrated blogs published by EoY'2010</p>
+            <div id="blogmenu">
+              <span class="blogbackbtn">
+                <a href="#"
+                  class="button radius small"
+                  onClick="toggleBlogContentToList();"
+                  onkeypress="toggleBlogContentToList();">
+                  back to blog-list
+                </a>
+              <span>
+            </div>
+            <div class="mui--text-dark-secondary mui--text-body2">
+              <div id="bloglist">
+                <template id="bloglistTmpl">
+                  <div class="blogitem">
+                    <article>
+                      <h3>
+                        <a class="blogTitle" href="javascript:void(0)" onClick="openBlog(this);" onkeypress="openBlog(this);"></a>
+                        <span class="blogFile"></span>
+                        <span class="blogURL"></span>
+                      </h3>
+                      <div class="blogDate"></div>
+                      <h4><small class="blogTags"></small></h4>
+                    </article>
+                  </div>
+                </template>
+              </div>
+            </div>
             <br>
-            <br>
-            <div class="mui--text-dark-secondary mui--text-body2">RECENT POSTS</div>
+            <!-- blog goes here -->
+            <div id="blogcontent"></div>
             <div class="mui-divider"></div>
-            <br>
-            <!-- blog goes here -->
-            <br>
-            <br>
-            <!-- blog goes here -->
           </div>
         </div>
       </div>
@@ -66,5 +90,10 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nerko+One&family=Pacifico&display=swap" rel="stylesheet">
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/js/bloglist.js"></script>
+    <script src="/js/simpleblog.js"></script>
+    <link href="/css/simpleblog.css" rel="stylesheet" type="text/css" />
   </body>
 </html>
