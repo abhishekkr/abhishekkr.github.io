@@ -1,10 +1,8 @@
-```meta-title: Social Engineering [from Eden Guide to Hacking >> Active Recon]```
-```meta-date: 2011-10-03 16:09:00```
-```meta-updated: 2011-10-03 16:11:19```
-```meta-comments: 2```
-```meta-tags: social engineering human factor Security Threat howto rconnaisance guide hacking recon```
+Social Engineering [from Eden Guide to Hacking >> Active Recon]
+2011-10-03
+social engineering human factor Security Threat howto rconnaisance guide hacking recon```
 
-> was originally posted at deprecated blog [http://.blogspot.com]()
+> was originally posted at a deprecated blog
 
 
 <div class="css-full-post-content js-full-post-content">
