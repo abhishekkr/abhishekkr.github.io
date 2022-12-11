@@ -1,289 +1,149 @@
-```meta-title: xml-motor ~ what it is; how &amp; why should you use it```
-```meta-date: 2012-03-25 00:47:00```
-```meta-updated: 2012-03-25 05:28:31```
-```meta-comments: 0```
-```meta-tags: parser rubygem algorithm paper project xml-parser presentation ruby research new abk xml xml parser opensource html parser```
 
+> was originally posted at a deprecated blog
 
+## xml-motor: what it is; why & how you should use it
 
-<div class="css-full-post-content js-full-post-content">
-
-
-<div dir="ltr" style="text-align: left;" trbidi="on">
-<div style="text-align: right;">
-<i>
-<b>xml-motor ~ what it is; why &amp; how you should use it
-</b>
-</i>
-</div>
-<div>
 Download this article as pdf on what,why,how
 
-<a href="http://speakerdeck.com/u/abhishekkr/p/xml-motor-whatwhyhow-this-xml-parsing-rubygem#">http://speakerdeck.com/u/abhishekkr/p/xml-motor-whatwhyhow-this-xml-parsing-rubygem#
-</a>
+<a href="http://speakerdeck.com/u/abhishekkr/p/xml-motor-whatwhyhow-this-xml-parsing-rubygem#">http://speakerdeck.com/u/abhishekkr/p/xml-motor-whatwhyhow-this-xml-parsing-rubygem#</a>
+
+Late 2011, I started with a new rubygem project for parsing xml, html content.
+
+> Rubygems: [http://rubygems.org/gems/xml-motor](http://rubygems.org/gems/xml-motor)
+>
+> Github: [https://github.com/abhishekkr/rubygem\_xml\_motor](https://github.com/abhishekkr/rubygem_xml_motor)
+
+Just created it to test out my work at compact, quick and easy xml-parsing algorithm... can see that
+
+> Slideshare: [http://www.slideshare.net/AbhishekKr/xmlmotor](http://www.slideshare.net/AbhishekKr/xmlmotor)
+
+So, currently this is a *non-native*, completely *independent less-than-250 ruby-LOC* available as a simple rubygem to be require-d and use in an easy freehand notation and match with any node attributes.
 
 
-<script src="http://speakerdeck.com/embed/4f6e6818933f08001f00b579.js">
-</script>
-or read it all here.....
+### Current Features
+
+* Has a single method access to parse require xml nodes from content or file. Use it only if you are gonna parse that xml-content once. For using same xml-content more than once, follow the 3-way step mentioned in examples.
+
+* It doesn't depend on presence of any other system library, purely non-native.
+
+* It parses broken or corrupted xml/html content correctly, just for the content it have.
+
+* Can parse results on looking for node-names, attributes of node or both.
+
+* Uses free-freehand notation to retrieve desired xml nodes if your xml looks like below, and you look for `book.author`. Then, you'll get back `['CBA', 'XY', 'YZ']`; what that means is the child-node could be at any depth in the parent-node.
+
+```
+<library>...
+  <book>
+    <title>ABC</title>
+    <author>CBA</author>
+  </book>...
+  <book>
+    <title>XYZ</title>
+    <authors>
+      <author>XY</author>
+      <author>YZ</author>
+    </authors>
+    </book>...
+</library>
+```
+
+* Default return mode is without the tags, there is a switch to get the nodes. As you'd have seen in above example: `CBA` gets sent by default, not `<author>CBA</author>`.
+
+* To filter your nodes on the basis of attributes, single or multiple attributes can be provided.
+
+* These attribute searches can be combined up with freehand node name searches.
+
+* Readme (a bit weird): [rubygem\_xml\_motor / README](https://raw.github.com/abhishekkr/rubygem_xml_motor/master/README)
+
+### Features To Come
+
+* Work on making it more performance efficient.
+
+* Limit over result-nodes retrieved from start/end of matching nodes.
+
+* Multi-node attribute-based filter for a hierarchical node search.
+
+* Add dev-knows CSS Selector, it's already present using attribute based search... just need to add a mapping method.
 
 
-</div>Late 2011, I started with a new rubygem project for parsing xml, html content.
-&nbsp;&nbsp;
-<b>
-<i>@Rubygems:
-</i>
-</b>
-<a href="http://rubygems.org/gems/xml-motor">http://rubygems.org/gems/xml-motor
-</a>
-&nbsp;&nbsp;
-<b>
-<i>@GitHub &nbsp; &nbsp; :
-</i>
-</b>
-<a href="https://github.com/abhishekkr/rubygem_xml_motor">https://github.com/abhishekkr/rubygem_xml_motor
-</a>
+### EXAMPLES of usage
 
-Just created it to test out my work at compact, quick &amp; easy xml-parsing algorithm... can see that
-&nbsp;&nbsp;
-<b>
-<i>@Slideshare:
-</i>
-</b>
-<a href="http://www.slideshare.net/AbhishekKr/xmlmotor">http://www.slideshare.net/AbhishekKr/xmlmotor
-</a>
+*example code to try:* [axml-motor / ruby / examples](https://github.com/abhishekkr/axml-motor/tree/master/ruby/examples)
 
-So, currently this is a
-<b>
-<i>non-native
-</i>
-</b>, completely
-<b>
-<i>independent less-than-250 ruby-LOC
-</i>
-</b> available as a simple rubygem to be require-d and
-<b>
-<i>use in an easy freehand notation and match with any node attributes
-</i>
-</b>.
+* say, you have an xml file `dummy.xml`, with data as
 
+```
+<dummy>
+  <ummy>
+    <mmy class="sys">non-native</mmy>
+  </ummy>
+  <ummy>
+    <mmy class="sys">
+      <my class="sys" id="mem">compact</my>
+    </mmy>
+  </ummy>
+  <mmy type="user">
+    <my class="usage">easy</my>
+  </mmy>
+</dummy>
+```
 
-<b>Current Features:
-</b>
+* its available at rubygems.org, install it as `# gem install xml-motor`
 
-<ul style="text-align: left;">
-<li>Has a single method access to parse require xml nodes from content or file. Use it only if you are gonna parse that xml-content once.&nbsp;For using same xml-content more than once, follow the 3-way step mentioned in examples.
-</li>
-<li>It doesn't depend on presence of any other system library, purely non-native.
-</li>
-<li>It parses broken or corrupted xml/html content correctly, just for the content it have.
-</li>
-<li>Can parse results on looking for node-names, attributes of node or both.
-</li>
-<li>Uses free-freehand notation to retrieve desired xml nodes
-if your xml looks like,
+* include it in your ruby code,
 
-<i>
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">'&lt;library&gt;...
-&nbsp;&nbsp;&lt;book&gt;&nbsp;&lt;title&gt;ABC&lt;/title&gt; &lt;author&gt;CBA&lt;/author&gt; &lt;/book&gt;...
-&nbsp;&nbsp;&lt;book&gt;
-&nbsp;&nbsp; &nbsp;&lt;title&gt;XYZ&lt;/title&gt;
-&nbsp;&nbsp; &nbsp;&nbsp;&lt;authors&gt; &lt;author&gt;XY&lt;/author&gt;&lt;author&gt;YZ&lt;/author&gt; &lt;/authors&gt;&lt;/book&gt;...
-&lt;/library&gt;'
-</span>
-</i>
-and you look for 'book.author',
-then, you'll get back
-<i>['CBA', 'XY', 'YZ']
-</i>;
-what that means is the child-node could be at any depth in the parent-node.
-</li>
-<li>Default return mode is without the tags, there is a switch to get the nodes.
-as you'd have seen in above example:
-'
-<i>CBA
-</i>' gets sent by default, not '
-<i>
-<author>CBA
-</author>
-</i>'
-</li>
-<li>To filter your nodes on the basis of attributes, single or multiple attributes can be provided.
-</li>
-<li>These attribute searches can be combined up with freehand node name searches.
-</li>
-<li>
-<b>
-<i>Readme (a bit weird):
-</i>
-</b>
-<a href="https://raw.github.com/abhishekkr/rubygem_xml_motor/master/README">https://raw.github.com/abhishekkr/rubygem_xml_motor/master/README
-</a>
-</li>
-</ul>
-<div>
-<b>
+```
+#!/usr/bin/env ruby
 
-</b>
-</div>
-<div>
-<b>
+require 'xml-motor'
+```
 
-</b>
-</div>
-<div>
-<b>Features To Come:
-</b>
+* get the XML Filename and/or XML data available
 
-<ul style="text-align: left;">
-<li>Work on making it more performance efficient.
-</li>
-<li>Limit over result-nodes retrieved from start/end of matching nodes.
-</li>
-<li>Multi-node attribute-based filter for a hierarchical node search.
-</li>
-<li>Add dev-knows CSS Selector, it's already present using attribute based search... just need to add a mapping method.
-</li>
-</ul>
-<div>
+```
+fyl = File.join(File.expand_path(File.dirname __FILE__), 'dummy.xml')
 
-</div>
-<div>
+xml = File.open(fyl,'r'){|fr| fr.read }
+```
 
-</div>
-<b>EXAMPLES of usage:
-</b>
+* one-time XML-Parsing directly from file
 
-<b>
-<i>example code to try:&nbsp;
-</i>
-</b>
-<a href="https://github.com/abhishekkr/axml-motor/tree/master/ruby/examples">https://github.com/abhishekkr/axml-motor/tree/master/ruby/examples
-</a>
-</div>
-<div>
-<ul style="text-align: left;">
-<li>say, you have an xml file
-<b>
-<i>'dummy.xml'
-</i>
-</b>, with data as
+```
+XMLMotor.get_node_from_file(fyl, 'ummy.mmy', 'class="sys"')
 
-<i>&lt;dummy&gt;
-&nbsp;&nbsp;&lt;ummy&gt;&nbsp;&nbsp; &nbsp;&lt;mmy class="sys"&gt;non-native&lt;/mmy&gt;&nbsp;&nbsp;&lt;/ummy&gt;
-&nbsp;&nbsp;&lt;ummy&gt;
-&nbsp;&nbsp; &nbsp;&lt;mmy class="sys"&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;my class="sys" id="mem"&gt;compact&lt;/my&gt;&nbsp;&nbsp; &nbsp;&lt;/mmy&gt;
-&nbsp;&nbsp;&lt;/ummy&gt;
-&nbsp;&nbsp;&lt;mmy type="user"&gt;&nbsp;&nbsp; &nbsp;&lt;my class="usage"&gt;easy&lt;/my&gt;&nbsp;&nbsp;&lt;/mmy&gt;&lt;/dummy&gt;
-</i>
-</li>
-<li>its available at rubygems.org, install it as
-&nbsp;&nbsp;$
-<i>gem install xml-motor
-</i>
-</li>
-<li>include it in your ruby code,
+=begin
+Result: 
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;#!/usr/bin/env ruby
-&nbsp;&nbsp;require 'xml-motor'
-</span>
-</li>
-<li>get the XML Filename and/or XML data available
+["non-native", "\n <my class="\&quot;sys\&quot;" id="\&quot;mem\&quot;">compact</my>\n"]
+=end
+```
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;fyl =
-</span>
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">File.join(File.expand_path(File.dirname __FILE__),
-</span>
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">'dummy.xml'
-</span>
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">)
-</span>
+* one-time XML-Parsing directly from content
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;xml = File.open(fyl,'r'){|fr| fr.read }
-</span>
-</li>
-<li>One-time XML-Parsing directly from file
+```
+XMLMotor.get_node_from_content(xml, 'dummy.my', 'class="usage"')
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;XMLMotor.get_node_from_file(fyl, 'ummy.mmy', 'class="sys"')
-</span>
+=begin
+Result:
 
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp; Result:&nbsp;
-</i>
-</span>
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">["non-native", "\n &nbsp; &nbsp; &nbsp;
-<my class="\&quot;sys\&quot;" id="\&quot;mem\&quot;">compact
-</my>\n &nbsp; &nbsp;"]
-</span>
-</li>
-<li>One-time XML-Parsing directly from content
+["easy"]
+=end
+```
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;XMLMotor.get_node_from_content xml, 'dummy.my', 'class="usage"'
-</span>
+* Way to go for XML-Parsing for xml node searches
 
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp; Result:
-</i>&nbsp;["easy"]
-</span>
-&nbsp;&nbsp;
-</li>
-<li>Way to go for XML-Parsing for xml node searches
+```
+xsplit = XMLMotor.splitter(xml)
+xtags  = XMLMotor.indexify(xsplit)
+```
 
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;xsplit = XMLMotor.splitter xml
-&nbsp;&nbsp;xtags &nbsp;= XMLMotor.indexify xsplit
-</span>
+> * just normal node name based freehand notation to search: `XMLMotor.xmldata(xsplit, xtags, 'dummy.my')` with result `["compact", "easy"]`
+>
+> * searching for values of required nodes filtered by attribute: `XMLMotor.xmldata(xsplit, xtags, nil, 'class="usage"')` with result `["easy"]`
+> 
+> * searching for values of required nodes filtered by freehand tag-name notation and attribute: `XMLMotor.xmldata(xsplit, xtags, 'dummy.my', 'class="usage"')` with result `["easy"]`
+>
+> * searching for values of required nodes filtered by freehand tag-name notation and multiple attributes: `XMLMotor.xmldata(xsplit, xtags, 'dummy.my', ['class="sys"', 'id="mem"'])` with result `["compact"]`
 
-<i>
-&nbsp;&nbsp;[] just normal node name based freehand notation to search:
-</i>
-&nbsp;&nbsp; &nbsp;
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">XMLMotor.xmldata xsplit, xtags, 'dummy.my'
-</span>
-
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp;Result:
-</i>&nbsp;["compact", "easy"]
-</span>
-
-<i>&nbsp;&nbsp;[] searching for values of required nodes filtered by attribute:
-</i>
-&nbsp;&nbsp; &nbsp;
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">XMLMotor.xmldata xsplit, xtags, nil, 'class="usage"'
-</span>
-
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp;Result:
-</i>&nbsp;["easy"]
-</span>
-
-<i>
-&nbsp;&nbsp;[] searching for values of required nodes filtered by freehand tag-name notation &amp; attribute:
-</i>
-&nbsp;&nbsp; &nbsp;
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">XMLMotor.xmldata xsplit, xtags, 'dummy.my', 'class="usage"'
-</span>
-
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp;Result:
-</i>&nbsp;["easy"]
-</span>
-
-<i>
-&nbsp;&nbsp;[] searching for values of required nodes filtered by freehand tag-name notation &amp; multiple attributes:
-</i>
-&nbsp;&nbsp; &nbsp;
-<span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">XMLMotor.xmldata xsplit, xtags, 'dummy.my', ['class="sys"', 'id="mem"']
-</span>
-
-<span class="Apple-style-span" style="font-family: Times, 'Times New Roman', serif;">
-<i>&nbsp;&nbsp; &nbsp;Result:
-</i>&nbsp;["compact"]
-</span>
-</li>
-</ul>
-</div>
-</div>
-
-
-</div>
-
+---

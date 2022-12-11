@@ -195,13 +195,17 @@ audio {
   background-color: #135e9b;
   font-weight: bold;
   display: block;
+  word-wrap: break-word;
 }
 #blogcontent .oneline-code {
   margin-top: 1px;
   margin-bottom: 1px;
   margin-left: 5px;
   padding-left: 4px;
+  padding-right: 5px;
   border-left: 3px solid #646464;
   color: #000000;
   background-color: #c9c9c9;
+  word-wrap: break-word;
+  white-space: initial;
 }
