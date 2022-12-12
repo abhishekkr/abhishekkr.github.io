@@ -1,9 +1,9 @@
 [
-  { "blogTitle":"", "blogFile": "./blogs/2013-07-27-wip-puppet-beginners-concept-guide-part.md", "blogTags":"", "blogDate": ""},
-  { "blogTitle":"", "blogFile": "./blogs/2013-05-31-testing-chaos-with-automated.md", "blogTags":"", "blogDate": ""},
-  { "blogTitle":"", "blogFile": "./blogs/2013-04-24-beginners-guide-to-openstack-basics-of.md", "blogTags":"", "blogDate": ""},
-  { "blogTitle":"", "blogFile": "./blogs/2013-04-17-beginners-guide-to-openstack-basics.md", "blogTags":"", "blogDate": ""},
-  { "blogTitle":"", "blogFile": "./blogs/2013-02-03-messq-message-queue-for-quickly-trying.md", "blogTags":"", "blogDate": ""},
+  { "blogTitle":"Puppet, a beginners concept guide: Part 4 Where is my Data", "blogFile": "./blogs/2013-07-27-wip-puppet-beginners-concept-guide-part.md", "blogTags":"2013-07-27, config, guide, infra, devops, puppetdb, hiera", "blogDate": "27th Jul'2013, Saturday"},
+  { "blogTitle":"Testing Chaos with Automated Configuration Management solutions", "blogFile": "./blogs/2013-05-31-testing-chaos-with-automated.md", "blogTags":"2013-05-31, serverspec, chaosmonkey, rspec-puppet, monitoring, test-kitchen, infra, devops", "blogDate": "31st May'2013, Friday"},
+  { "blogTitle":"Beginner's Guide to OpenStack: Basics of Nova, Part 2", "blogFile": "./blogs/2013-04-24-beginners-guide-to-openstack-basics-of.md", "blogTags":"2013-04-24, compute, openstack, guide, IaaS, cloud, OSS, rackspace", "blogDate": "24th Apr'2013, Wednesday"},
+  { "blogTitle":"Beginner's Guide to OpenStack, Basics: Part 1", "blogFile": "./blogs/2013-04-17-beginners-guide-to-openstack-basics.md", "blogTags":"2013-04-17, openstack, guide, nova, IaaS, cloud, oss, rackspace", "blogDate": "17th Apr' 2013, Wednesday"},
+  { "blogTitle":"MessQ: message queue for quickly trying any idea", "blogFile": "./blogs/2013-02-03-messq-message-queue-for-quickly-trying.md", "blogTags":"2013-02-03, messQ, rubygem, message queue, oss", "blogDate": "3rd Feb'2013, Sunday"},
 
   { "blogTitle":"ci-go-nfo v0.0.1: console util for ThoughtWorks' Go CI Server", "blogFile": "./blogs/2012-09-19-ci-go-nfo-v001-console-util-for.md", "blogTags":"2012-09-19, server, agile, ci, rubygem, go cd, continuous delivery, ci-go-nfo, thoughtworks, console", "blogDate": "19th Sep'2012, Wednesday"},
   { "blogTitle":"Puppet, a beginners concept guide (Part 3): Modules much more", "blogFile": "./blogs/2012-08-05-puppet-beginners-concept-guide-part-3.md", "blogTags":"2012-08-05, puppetlabs, devops, config, automation, guide, infra", "blogDate": "5th Aug' 2012, Sunday"},
