@@ -1,4 +1,7 @@
 [
+  { "blogTitle":"Grafana's K6 for Performance Testing via JavaScript, Getting Started", "blogFile": "./blogs/2022-06-18-howto-k6-perf-test.md", "blogTags":"2022-06-18, howto, k6.io, javascript, grafana, performance, load, relaibility, testing", "blogDate": "18th Jun'2022, Saturday"},
+  { "blogTitle":"Locust for Performance Testing with Python (HTTP/WebSocket/etc)", "blogFile": "./blogs/2022-05-28-howto-locust-perf-test.md", "blogTags":"2022-05-28, howto, locust.io, python, performance, load, benchamrk, testing", "blogDate": "28th May'2022, Saturday"},
+
   { "blogTitle":"HowTo Github: Enable Sponsor Button", "blogFile": "./blogs/2021-02-13-howto-github-sponsor-button.md", "blogTags":"2021-02-13, howto, github, sponsor", "blogDate": "13th Feb'2021, Saturday"},
   { "blogTitle":"Shell Guide: awk, grep, sed, sort, uniq, head, history", "blogFile": "./blogs/2021-02-06-shell-guide-awk-grep-sed-sort-uniq-head-history.md", "blogTags":"2021-02-06, shell, scripting, linux, commands, terminal, tutorial", "blogDate": "6th Feb'2021, Saturday"},
   { "blogTitle":"Test To Learn: 'Go' Session#1 (Golang with TDD)", "blogFile": "./blogs/2021-01-16-test-to-learn-go-session-1-tdd.md", "blogTags":"2021-01-16, Test To Learn, TDD, go, golang, tutorial, programming, code", "blogDate": "16th Jan'2021, Saturday"},
