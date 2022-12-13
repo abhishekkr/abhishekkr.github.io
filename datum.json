@@ -1,4 +1,10 @@
 [
+  { "blogTitle":"HTTP200: dynamic HTTP Endpoints for Testing with Fake Response", "blogFile": "./blogs/2020-12-21-http200-intro.md", "blogTags":"2020-12-21, http200, TMT, mock, testing, API, server, golang", "blogDate": "21st Dec'2020, Monday"},
+  { "blogTitle":"HowTo VirtualBox: Setup on Fedora & Create a new Ubuntu VM", "blogFile": "./blogs/2020-12-20-howto-virtualbox.md", "blogTags":"2020-12-20, virtualbox, VM, virtual machine, hypervisor, fedora, ubuntu", "blogDate": "20th Dec'2020, Sunday"},
+  { "blogTitle":"Create an IMDB cli in Golang (via Web Scraping)", "blogFile": "./blogs/2020-12-16-golang-tutorial-create-imdb-cli.md", "blogTags":"2020-12-16, Go, golang, tutorial, imdb, web scraping, cli", "blogDate": "16th Dec' 2020, Wednesday"},
+  { "blogTitle":"Cache output for your Bash functions (any console command)", "blogFile": "./blogs/2020-12-09-cache-output-for-terminal-commands.md", "blogTags":"2020-12-09, bash, code, terminal, cli, script, cache", "blogDate": "9th Dec'2020, Wednesday"},
+  { "blogTitle":"Concat Multiple Video Files into a Single Video with FFMPEG", "blogFile": "./blogs/2020-12-09-concat-video-files-with-ffmpeg.md", "blogTags":"2020-12-09, TMT, 2 Minutes Tech, FFMPEG, video, cli", "blogDate": "9th Dec'2020, Wednesday"},
+
   { "blogTitle":"Puppet, a beginners concept guide: Part 4 Where is my Data", "blogFile": "./blogs/2013-07-27-wip-puppet-beginners-concept-guide-part.md", "blogTags":"2013-07-27, config, guide, infra, devops, puppetdb, hiera", "blogDate": "27th Jul'2013, Saturday"},
   { "blogTitle":"Testing Chaos with Automated Configuration Management solutions", "blogFile": "./blogs/2013-05-31-testing-chaos-with-automated.md", "blogTags":"2013-05-31, serverspec, chaosmonkey, rspec-puppet, monitoring, test-kitchen, infra, devops", "blogDate": "31st May'2013, Friday"},
   { "blogTitle":"Beginner's Guide to OpenStack: Basics of Nova, Part 2", "blogFile": "./blogs/2013-04-24-beginners-guide-to-openstack-basics-of.md", "blogTags":"2013-04-24, compute, openstack, guide, IaaS, cloud, OSS, rackspace", "blogDate": "24th Apr'2013, Wednesday"},
