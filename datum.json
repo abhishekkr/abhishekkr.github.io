@@ -1,4 +1,8 @@
 [
+  { "blogTitle":"HowTo Github: Enable Sponsor Button", "blogFile": "./blogs/2021-02-13-howto-github-sponsor-button.md", "blogTags":"2021-02-13, howto, github, sponsor", "blogDate": "13th Feb'2021, Saturday"},
+  { "blogTitle":"Shell Guide: awk, grep, sed, sort, uniq, head, history", "blogFile": "./blogs/2021-02-06-shell-guide-awk-grep-sed-sort-uniq-head-history.md", "blogTags":"2021-02-06, shell, scripting, linux, commands, terminal, tutorial", "blogDate": "6th Feb'2021, Saturday"},
+  { "blogTitle":"Test To Learn: 'Go' Session#1 (Golang with TDD)", "blogFile": "./blogs/2021-01-16-test-to-learn-go-session-1-tdd.md", "blogTags":"2021-01-16, Test To Learn, TDD, go, golang, tutorial, programming, code", "blogDate": "16th Jan'2021, Saturday"},
+
   { "blogTitle":"HTTP200: dynamic HTTP Endpoints for Testing with Fake Response", "blogFile": "./blogs/2020-12-21-http200-intro.md", "blogTags":"2020-12-21, http200, TMT, mock, testing, API, server, golang", "blogDate": "21st Dec'2020, Monday"},
   { "blogTitle":"HowTo VirtualBox: Setup on Fedora & Create a new Ubuntu VM", "blogFile": "./blogs/2020-12-20-howto-virtualbox.md", "blogTags":"2020-12-20, virtualbox, VM, virtual machine, hypervisor, fedora, ubuntu", "blogDate": "20th Dec'2020, Sunday"},
   { "blogTitle":"Create an IMDB cli in Golang (via Web Scraping)", "blogFile": "./blogs/2020-12-16-golang-tutorial-create-imdb-cli.md", "blogTags":"2020-12-16, Go, golang, tutorial, imdb, web scraping, cli", "blogDate": "16th Dec' 2020, Wednesday"},
