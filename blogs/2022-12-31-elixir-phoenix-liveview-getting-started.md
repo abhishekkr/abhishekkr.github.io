@@ -64,7 +64,7 @@ You should be able to check this barebone app at [http://localhost:4000](http://
 
 > @[github/my\_status](https://github.com/abhishekkr/my_status) could see the current state of code and all steps to be covered here & in future tutorials
 >
-> available at *git commit* `8651b625e504f8e4637608716f768da2fb509999`
+> available at *git commit* [8651b625e504f8e4637608716f768da2fb509999](https://github.com/abhishekkr/my_status/commit/8651b625e504f8e4637608716f768da2fb509999)
 
 ### Make it your own
 
@@ -155,7 +155,7 @@ You should be able to check this barebone app at [http://localhost:4000](http://
 
 * also update `test/my_status_web/controllers/page_controller_test.exs` to check for `A Sample Service` in homepage html; so `mix test` pass
 
-> available at *git commit* `b42f24a2064af1d11491676d9cff74e2b932bc84`
+> available at *git commit* [b42f24a2064af1d11491676d9cff74e2b932bc84](https://github.com/abhishekkr/my_status/commit/b42f24a2064af1d11491676d9cff74e2b932bc84)
 
 > **We'll evolve onto this boilerplate LiveView App created in Part.2 for a Live Status Page.**
 
