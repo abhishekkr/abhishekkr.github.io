@@ -1,4 +1,5 @@
 [
+  { "blogTitle":"Phoenix LiveView App: Hello Elixir App, Part.1", "blogFile": "./blogs/2022-12-31-elixir-phoenix-liveview-getting-started.md", "blogTags":"2022-12-31, howto, elixir, phoenix, webapp, liveview, web framework, tutorial", "blogDate": "31st Dec'2022, Saturday"},
   { "blogTitle":"Grafana's K6 for Performance Testing via JavaScript, Getting Started", "blogFile": "./blogs/2022-06-18-howto-k6-perf-test.md", "blogTags":"2022-06-18, howto, k6.io, javascript, grafana, performance, load, relaibility, testing", "blogDate": "18th Jun'2022, Saturday"},
   { "blogTitle":"Locust for Performance Testing with Python (HTTP/WebSocket/etc)", "blogFile": "./blogs/2022-05-28-howto-locust-perf-test.md", "blogTags":"2022-05-28, howto, locust.io, python, performance, load, benchamrk, testing", "blogDate": "28th May'2022, Saturday"},
 
