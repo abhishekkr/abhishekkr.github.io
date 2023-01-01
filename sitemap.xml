@@ -1,493 +1,499 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://abhishekkr.github.io/</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/index.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/code.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/uncode.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/blog.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <!-- BLOG LIST BEGIN -->
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-06-12-conficker-one-of-most-dreaded-worm-of.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-06-14-atms-under-trojan-attack-in-eastern.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-07-04-first-firefox-malware-trojans-stealing.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-07-08-vulnerable-microsofts-video-activex.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-09-07-ads-alternate-data-stream-ntfs-dark.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-10-10-scareware-know-ur-lingo.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2009-12-12-n00bRAT-foss-simple-http-based-trojan.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-01-16-abk-sitehoster-developing-http-network.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-01-16-easily-set-up-webserver-with-standalone.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-02-19-on-18-feb-2010-netwitness-reported.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-06-19-rapid7s-nexpose.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-06-23-microsoft-network-monitor-its-free-its.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-07-13-dummynet-howto-open-source-tool-to.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-08-05-is-python-installed-yes-you-have-simple.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-08-05-run-python-no-script-to-provide-cgi.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-08-11-linux-to-kill-multiple-instances-of.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-08-27-hrberrycom-php-flaw-self-inviting-dos.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-09-06-problem-with-ieee-8021x-implementations.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-09-06-xss-defeating-poc-if-have-any-time-for.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-09-26-xssed-orkut-after-twitter-after.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-09-27-git-on-windows-beginners-howto-part-1.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-12-17-only-org-and-net-domains-under-dnssec.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-12-21-bypass-of-user-level-restrictions-case.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2010-12-29-weak-excuses-after-weak-security.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-02-18-apache-solr-talented-yet-careless.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-03-04-presentation-on-xss-defeating-concept.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-03-16-indian-airport-internet-hacking.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-03-30-full-site-ssl-ification-is-not-option.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-05-05-nagios-for-it-infrastructure-monitoring.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-05-05-snmp-for-secure-rremote-resource.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-05-25-cacti-for-it-infrastructure-monitoring.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-05-25-how-i-got-2-time-life-time-banned-from.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-06-22-host-your-site-on-google-appengine-in-7.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-06-30-user-authentication-authorization-at.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-07-28-derailedduke-now-test-any-website-using.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-07-28-eden-guide-to-hacking-hacking.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-08-09-make-nix-automatic-re-spawn.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-08-11-howto-check-for-safety-of-shorten-urls.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-08-29-devops-with-secops-short-intro-to.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-09-13-open-intelligence-gathering-for-passive.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-09-23-beast-beating-ssl-tls-what-you-can-do.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-10-03-eden-guide-to-hacking-httpsgithub.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-10-20-httpvoodoomongo-remote-control-your.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-11-09-new-portable-algo-easy-xml-parsing.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-11-12-xml-motor-v003-mine-xml-once-multiple.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-11-21-adios-censorship-hola-oddns-internet.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2011-12-15-basics-of-powershell-empowering-windows.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-03-05-messq-just-fun-little-project-providing.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-03-25-xml-motor-what-it-is-how-why-should-you.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-03-31-facebook-blocks-spam-urls-but-there.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-05-01-snoop-internal-netowrk-data-without.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-05-29-puppet-beginners-concept-guide-part-1.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-06-06-get-set-go-lang-part1.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-06-08-rss-motor-v004-rubygem-to-ease-up-your.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-07-08-puppet-beginners-concept-guide-part-2.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-07-17-how-to-host-your-public-yum-or-any-repo.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-07-28-devops-and-12factorapp-some-obsolete.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-08-05-puppet-beginners-concept-guide-part-3.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2012-09-19-ci-go-nfo-v001-console-util-for.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2013-02-03-messq-message-queue-for-quickly-trying.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2013-04-17-beginners-guide-to-openstack-basics.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2013-04-24-beginners-guide-to-openstack-basics-of.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2013-05-31-testing-chaos-with-automated.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2013-07-27-wip-puppet-beginners-concept-guide-part.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2020-12-09-concat-video-files-with-ffmpeg.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2020-12-09-cache-output-for-terminal-commands.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2020-12-16-golang-tutorial-create-imdb-cli.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2020-12-20-howto-virtualbox.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2020-12-21-http200-intro.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2021-01-16-test-to-learn-go-session-1-tdd.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2021-02-06-shell-guide-awk-grep-sed-sort-uniq-head-history.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2021-02-13-howto-github-sponsor-button.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2022-05-28-howto-locust-perf-test.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://abhishekkr.github.io/blog.html#/blogs/2022-06-18-howto-k6-perf-test.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://abhishekkr.github.io/blog.html#/blogs/2022-12-31-elixir-phoenix-liveview-getting-started.md</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <loc>https://abhishekkr.github.io/blog.html#/blogs/2023-01-01-elixir-phoenix-liveview-getting-started.md</loc>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://abhishekkr.github.io/blog.html#/blogs/2023-01-01-nim-generate-sitemap.md</loc>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <!-- BLOG LIST END -->
   <url>
     <loc>https://abhishekkr.github.io/about.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/slides/index.html</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://abhishekkr.github.io/slides/2015.ggn.geeknight.timeseriesdb.htm</loc>
-    <lastmod>2022-12-31T11:38:06+00:00</lastmod>
+    <lastmod>2023-01-01T06:38:06+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 </urlset>
