@@ -1,5 +1,6 @@
 [
-  { "blogTitle":"Nim project to generate custom sitemap.xml", "blogFile": "./blogs/2023-01-01-nim-generate-sitemap.md", "blogTags":"2022-01-01, howto, nim, nim-lang, sitemap, xml, generator", "blogDate": "31st Dec'2022, Saturday"},
+  { "blogTitle":"HowTo: LyraJS, dependency-free full-text search in JavaScript", "blogFile": "./blogs/2023-01-02-howto-lyrajs.md", "blogTags":"2023-01-02, howto, lyrajs, full-text search, javascript, typescript", "blogDate": "2nd Jan'2023, Monday"},
+  { "blogTitle":"Nim project to generate custom sitemap.xml", "blogFile": "./blogs/2023-01-01-nim-generate-sitemap.md", "blogTags":"2023-01-01, howto, nim, nim-lang, sitemap, xml, generator", "blogDate": "1st Jan'2023, Sunday"},
 
   { "blogTitle":"Phoenix LiveView App: Hello Elixir App, Part.1", "blogFile": "./blogs/2022-12-31-elixir-phoenix-liveview-getting-started.md", "blogTags":"2022-12-31, howto, elixir, phoenix, webapp, liveview, web framework, tutorial", "blogDate": "31st Dec'2022, Saturday"},
   { "blogTitle":"Grafana's K6 for Performance Testing via JavaScript, Getting Started", "blogFile": "./blogs/2022-06-18-howto-k6-perf-test.md", "blogTags":"2022-06-18, howto, k6.io, javascript, grafana, performance, load, relaibility, testing", "blogDate": "18th Jun'2022, Saturday"},
