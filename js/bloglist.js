@@ -26,6 +26,7 @@ const blogTokenFromHash = function(){
 
 
 const toggleBlogContentToList = function(){
+  document.title = "ABK's Blog";
   document.location.hash = blogListHash;
   $DOM("#blogcontent").style.display = "none";
   $DOM("#bloglist").style.display = "block";
@@ -81,12 +82,12 @@ const urlBody = function(uri, isMD=false){
 function toggleBlogListToContent(blogURL){
   var blog_link = window.location.href.split('#')[0] + "#" + encodeURIComponent(blogURL);
   document.location.hash = blogHashFromLink(blogURL);
+  document.title = "ABK Blog" + document.location.hash;
 
   const isMD = (blogURL.split('.').pop().trim() == "md")
   var blogContent = urlBody(blogURL, isMD);
   if (undefined == blogContent){
     blogContent = "<div class=\"wip\"><p>HTTP 404</p>The page you are looking for is not found.</div>";
-  } else {
     console.log("ERROR: Cannot browse link for this blog.");
   }
   $DOM("#blogcontent").innerHTML = blogContent;
