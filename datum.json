@@ -1,4 +1,5 @@
 [
+  { "blogTitle":"Text to Image using Stable Diffusion on CPU-only Box", "blogFile": "./blogs/2023-01-11-stable-diffusion-on-cpu.md", "blogTags":"2023-01-11, machine learning, AI, stable diffusion, text to image, python, tutorial", "blogDate": "11th Jan'2023, Tuesday"},
   { "blogTitle":"HowTo: LyraJS, dependency-free full-text search in JavaScript", "blogFile": "./blogs/2023-01-02-howto-lyrajs.md", "blogTags":"2023-01-02, howto, lyrajs, full-text search, javascript, typescript", "blogDate": "2nd Jan'2023, Monday"},
   { "blogTitle":"Nim project to generate custom sitemap.xml", "blogFile": "./blogs/2023-01-01-nim-generate-sitemap.md", "blogTags":"2023-01-01, howto, nim, nim-lang, sitemap, xml, generator", "blogDate": "1st Jan'2023, Sunday"},
 
