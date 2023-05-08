@@ -288,5 +288,5 @@ if (document.getElementById("code").getBoundingClientRect().top == document.getE
   var interval = setInterval(draw, 10);
 
 } else {
-  document.getElementById("showCardParent").remove();
+  document.getElementById("showCard").remove();
 }
