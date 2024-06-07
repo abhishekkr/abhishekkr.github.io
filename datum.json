@@ -1,5 +1,7 @@
 [
-  { "blogTitle":"Analyze Linux Binaries with strings, ltrace, strace, RetDec, gdb", "blogFile": "./blogs/2023-11-10-analyze-linux-binary.md", "blogTags":"2023-11-10, linux, binary, analysis, security, strings, ltrace, strace, retdec, gdb, debug", "blogDate": "10th Nov'2023, Friday"},
+  { "blogTitle":"HowTo Create a VM in Linux using Virtual Machine Manager", "blogFile": "./blogs/2023-11-16-qemu-kvm.md", "blogTags":"2023-11-14, qemu, kvm, vmm, linux, howto", "blogDate": "16th Nov'2023, Thursday"},
+  { "blogTitle":"Zig Language coding session for small Pangram Problem", "blogFile": "./blogs/2023-11-14-zig-code-pangram.md", "blogTags":"2023-11-14, zig, code, pangram", "blogDate": "14th Nov'2023, Tuesday"},
+  { "blogTitle":"Analyze Linux Binaries with strings, ltrace, strace, RetDec, gdb", "blogFile": "./blogs/2023-11-10-analyze-linux-binary.md", "blogTags":"2023-11-10, linux, binary, strace, retdec, gdb, debug", "blogDate": "10th Nov'2023, Friday"},
   { "blogTitle":"Redis Guide, Part.1: Fundamentals, Pub-Sub Code Example", "blogFile": "./blogs/2023-01-17-data-series-part-01-redis-beginners.md", "blogTags":"2023-01-17, redis, in-memory database, cache, python, tutorial", "blogDate": "17th Jan'2023, Tuesday"},
   { "blogTitle":"Text to Image using Stable Diffusion on CPU-only Box", "blogFile": "./blogs/2023-01-11-stable-diffusion-on-cpu.md", "blogTags":"2023-01-11, machine learning, AI, stable diffusion, text to image, python, tutorial", "blogDate": "11th Jan'2023, Tuesday"},
   { "blogTitle":"HowTo: LyraJS, dependency-free full-text search in JavaScript", "blogFile": "./blogs/2023-01-02-howto-lyrajs.md", "blogTags":"2023-01-02, howto, lyrajs, full-text search, javascript, typescript", "blogDate": "2nd Jan'2023, Monday"},
