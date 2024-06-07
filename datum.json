@@ -1,5 +1,6 @@
 [
-  { "blogTitle":"HowTo Create a VM in Linux using Virtual Machine Manager", "blogFile": "./blogs/2023-11-16-qemu-kvm.md", "blogTags":"2023-11-14, qemu, kvm, vmm, linux, howto", "blogDate": "16th Nov'2023, Thursday"},
+  { "blogTitle":"", "blogFile": "./blogs/2023-11-19-setup-k8s-kubespray.md", "blogTags":"2023-11-19, kubernetes, k8s, kubespray, ansible, devops", "blogDate": "19th Nov'2023, Sunday"},
+  { "blogTitle":"HowTo Create a VM in Linux using Virtual Machine Manager", "blogFile": "./blogs/2023-11-16-qemu-kvm.md", "blogTags":"2023-11-16, qemu, kvm, vmm, linux, howto", "blogDate": "16th Nov'2023, Thursday"},
   { "blogTitle":"Zig Language coding session for small Pangram Problem", "blogFile": "./blogs/2023-11-14-zig-code-pangram.md", "blogTags":"2023-11-14, zig, code, pangram", "blogDate": "14th Nov'2023, Tuesday"},
   { "blogTitle":"Analyze Linux Binaries with strings, ltrace, strace, RetDec, gdb", "blogFile": "./blogs/2023-11-10-analyze-linux-binary.md", "blogTags":"2023-11-10, linux, binary, strace, retdec, gdb, debug", "blogDate": "10th Nov'2023, Friday"},
   { "blogTitle":"Redis Guide, Part.1: Fundamentals, Pub-Sub Code Example", "blogFile": "./blogs/2023-01-17-data-series-part-01-redis-beginners.md", "blogTags":"2023-01-17, redis, in-memory database, cache, python, tutorial", "blogDate": "17th Jan'2023, Tuesday"},
