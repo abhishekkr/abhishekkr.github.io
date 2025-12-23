@@ -1,0 +1,35 @@
+Privacy Policy for SANTA SAVES XMAS.
+Last Updated: 23rd December, 2025
+
+Luminous Decibels ("we," "us," or "our") operates the 'Santa Saves Xmas' smartphone game.
+
+1. Introduction
+Our Privacy Policy is simple: We do not collect, store, or share any personal information from our users. This game is designed to be a safe, fun, and private experience for players of all ages.
+
+2. Data Collection
+Personal Data: We do not collect any personally identifiable information (such as name, email address, phone number, or location).
+
+Non-Personal Data: We do not collect technical data or device identifiers.
+
+Local Storage: The game may save your progress (high scores, settings, gift counts) locally on your device using Hive/Local Storage. This data stays on your device and is never uploaded to our servers.
+
+3. Advertising and Third Parties
+No Ads: Our game does not display any third-party advertisements.
+
+No Third-Party SDKs: We do not use any third-party analytics (like Google Analytics or Firebase) or tracking tools that monitor your behavior.
+
+4. Children’s Privacy (COPPA Compliance)
+Because our game is intended for "kids and old alike," we take children's privacy very seriously:
+
+We do not knowingly collect any personal information from children under the age of 13.
+
+Our app is fully compliant with the Children’s Online Privacy Protection Act (COPPA).
+
+5. Permissions
+The app requires no special permissions (such as access to your Camera, Contacts, or Microphone) to function.
+
+6. Changes to This Policy
+We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date.
+
+7. Contact Us
+If you have any questions regarding privacy while using the app, please contact us via email at: abk@lude.page
