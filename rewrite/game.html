@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    position: relative;
+    margin-top: 100px;
+    width: 200px;
+    height: 800px;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: #252525;
+}
+
+.player {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translateX(-50%);
+}
+
+.player-gifs {
+  display: none;
+}
+
+.rectangle {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: #a9a9a9;
+    bottom: 50px; /* Height at which rectangles appear */
+    opacity: 1;
+    animation: move 3s linear forwards;
+}
+
+@keyframes move {
+    0% { left: -50px; }
+    100% { left: 250px; opacity: 0.5; }
+}
+
+#jumpButton {
+  margin-top: 5px;
+  font-size: 24px;
+}
+</style>
+    <title>Jumping Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="player" id="player">
+           <img src="img/abk-gh-idle.gif" class="idle-animated player-gifs" alt="🧍">
+           <img src="img/abk-gh-jump.gif" class="jump-animated player-gifs" alt="🏃">
+           <img src="img/abk-gh-fall.gif" class="fall-animated player-gifs" alt="🧎">
+        </div>
+    </div>
+    <button id="jumpButton">Jump</button>
+</body>
+<script>
+const gameContainer = document.querySelector('.game-container');
+const jumpButton = document.getElementById('jumpButton');
+
+const player = document.getElementById('player');
+const groundY = parseInt(getPlayerYNum());
+const playerStates = Object.freeze({
+  IDLE: 'idle',
+  JUMP: 'jump',
+  FALL: 'fall'
+});
+let playerState = playerStates.IDLE;
+
+const jumpHeight = 175;
+const jumpStep = 5;
+
+function createRectangle() {
+    const rectangle = document.createElement('div');
+    rectangle.classList.add('rectangle');
+
+    const randomHeight = 50 + Math.random() * (gameContainer.clientHeight - 70);
+    rectangle.style.bottom = `${randomHeight}px`;
+
+    gameContainer.appendChild(rectangle);
+
+    rectangle.addEventListener('animationend', () => {
+        rectangle.remove();
+    });
+}
+
+// Make player fall down
+function gravity(currentY) {
+    if (playerState == playerStates.IDLE) {
+        return;
+    }
+    if (groundY - currentY < 0) {
+        currentY -= jumpStep;
+        setPlayerYNum(currentY); // Come back down
+        setTimeout(() => {
+            gravity(currentY);
+        }, 30);
+    } else {
+        setPlayerYNum(groundY); // Revert to pre-jump
+        setPlayerAnimation(playerStates.IDLE);
+    }
+}
+
+// Make player jump
+function jump(offsetY=0) {
+    if (playerState == playerStates.FALL) {
+        return;
+    }
+    if (playerState != playerStates.JUMP) {
+        // for first jumpstep, set Jumping mode and offsetY
+        setPlayerAnimation(playerStates.JUMP);
+        offsetY = jumpStep;
+    }
+    const playerY = getPlayerYNum();
+    if (jumpHeight - jumpStep > offsetY) {
+        setPlayerYNum(parseInt(playerY) + jumpStep); // move up
+        setTimeout(() => {
+            jump(offsetY+jumpStep);
+        }, 15);
+        return;
+    }
+    // entire below is ELSE block for (jumpHeight - jumpStep > offsetY)
+    setTimeout(() => {
+      gravity(parseInt(playerY));
+    }, 50);
+    setPlayerAnimation(playerStates.FALL);
+}
+
+function getPlayerYNum() {
+    return window.getComputedStyle(player).bottom;
+}
+
+function setPlayerYNum(pY) {
+    player.style.bottom = `${pY}px`; // move up
+}
+
+function setPlayerAnimation(pState) {
+    playerState = pState;
+    document.getElementsByClassName('idle-animated')[0].style.display = 'none';
+    document.getElementsByClassName('jump-animated')[0].style.display = 'none';
+    document.getElementsByClassName('fall-animated')[0].style.display = 'none';
+    if (playerState == playerStates.JUMP) {
+      document.getElementsByClassName('jump-animated')[0].style.display = 'inline-block';
+    } else if (playerState == playerStates.FALL) {
+      document.getElementsByClassName('fall-animated')[0].style.display = 'inline-block';
+    } else {
+      document.getElementsByClassName('idle-animated')[0].style.display = 'inline-block';
+    }
+}
+
+// Create rectangles at intervals
+setInterval(createRectangle, 2000); // Generate a rectangle every 2 seconds
+
+jumpButton.addEventListener('click', jump);
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+        jump();
+    }
+});
+document.getElementsByClassName('idle-animated')[0].style.display = 'inline-block';
+</script>
+</html>
+

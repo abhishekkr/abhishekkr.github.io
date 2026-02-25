@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content li {
+    cursor: pointer;
+    color: #d9d9d9;
+    padding: 10px 5px 15px 5px;
+    /* transition: color 0.3s ease; */
+}
+
+.content li .heading {
+    font-size: 25px;
+    min-width: 125px;
+}
+
+.content li .heading:hover {
+    color: yellow;
+}
+
+.content li .items {
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.content li .item {
+  padding-left: 15px;
+}
+
+.content li .item:hover {
+    color: yellow;
+}
+
+.content li a {
+/*a:link, a:visited, a:hover, a:active*/
+  color: inherit;
+  text-decoration: none; /* Removes the underline */
+}
+
+.sidebar {
+    background-color: #141414;
+    padding: 10px;
+    max-width: 200px;
+}
+
+.sidebar .title {
+    font-size: 100px;
+    margin: 20px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.sidebar img {
+  width: 100px;
+  height: auto;
+}
+
+.rotate-text-90 {
+  font-size: 125px;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: 75px;
+    white-space: nowrap;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-yellow {
+  color: yellow;
+}
