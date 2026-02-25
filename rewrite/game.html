@@ -55,6 +55,20 @@
   margin-top: 5px;
   font-size: 24px;
 }
+
+.sakura {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px; /* X at which sakura appear */
+    opacity: 1;
+    animation: sakura-move 15s linear forwards;
+}
+
+@keyframes sakura-move {
+    0% { top: -50px; }
+    100% { top: 550px; opacity: 0.5; }
+}
 </style>
     <title>Jumping Game</title>
 </head>
@@ -83,6 +97,21 @@ let playerState = playerStates.IDLE;
 
 const jumpHeight = 175;
 const jumpStep = 5;
+
+function createSakura() {
+    const img = document.createElement('img');
+    img.classList.add('sakura');
+    img.src = 'img/sakura-rotate.gif'
+
+    const randomX = 10 + Math.random() * gameContainer.clientWidth;
+    img.style.left = `${randomX}px`;
+
+    gameContainer.appendChild(img);
+
+    img.addEventListener('animationend', () => {
+        img.remove();
+    });
+}
 
 function createRectangle() {
     const rectangle = document.createElement('div');
@@ -164,6 +193,7 @@ function setPlayerAnimation(pState) {
 
 // Create rectangles at intervals
 setInterval(createRectangle, 2000); // Generate a rectangle every 2 seconds
+setInterval(createSakura, 3000); // Generate a sakura every 2 seconds
 
 jumpButton.addEventListener('click', jump);
 document.addEventListener('keydown', (e) => {
